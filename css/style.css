@@ -71,9 +71,6 @@ video {
   vertical-align: baseline;
   background: transparent;
 }
-a {
-  color: #fff;
-}
 body {
   min-width: 1000px;
   font-family: arial, sans-serif, AvenirNext-DemiBold, AvenirNext,
@@ -215,10 +212,10 @@ footer {
 /*menu*/
 menu {
   position: relative;
-  height: 162px;
+  height: 282px;
 
   background: url("../img/nav_bg.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
   z-index: 9;
 }
 menu > ul {
@@ -264,7 +261,7 @@ menu > ul {
 
 .banner {
   height: 360px;
-  transform: translate(0, -134px);
+  transform: translate(0, -215px);
   position: relative;
 }
 .banner img {
