@@ -82,6 +82,11 @@ body {
   min-width: 980px;
   max-width: 1280px;
 }
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* header */
 header {
   width: 100%;
@@ -93,9 +98,6 @@ header {
 }
 header .wrap_box {
   height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 header .logo {
   height: 40px;
@@ -106,12 +108,6 @@ header h2 {
   line-height: 21px;
   letter-spacing: 0px;
   text-align: left;
-}
-.h-left,
-.h-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .h-left .school,
 .h-right .btn_box {
@@ -155,9 +151,6 @@ footer {
 
 .f_bottom {
   padding: 50px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .f_b_left img {
   display: block;
@@ -219,12 +212,9 @@ menu {
 }
 menu > ul {
   height: 60px;
-  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
-  justify-content: space-between;
-  align-items: center;
 }
 .menu li {
   font-family: inherit;
@@ -284,6 +274,7 @@ menu > ul {
   padding: 90px 0;
   overflow: hidden;
 }
+.news .title,
 .contact_us .title,
 .research .title,
 .welcome .title {
@@ -295,8 +286,6 @@ menu > ul {
 }
 .welcome .content_box {
   margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
 }
 .welcome .content_l {
   width: 70%;
@@ -429,12 +418,12 @@ menu > ul {
   width: 80%;
   border-radius: 10px;
   height: 134px;
-  margin: 20px auto 0 auto;
+  margin: 30px auto 0 auto;
   background: url("../img/contact_modal.png") no-repeat;
   background-size: cover;
   color: #000000;
   text-align: center;
-  box-shadow: 0px 30px 70px 0px #001D3A33;
+  box-shadow: 0px 30px 70px 0px #001d3a33;
 }
 .contact_us .modal p {
   font-size: 20px;
@@ -451,10 +440,91 @@ menu > ul {
   letter-spacing: 0px;
   text-align: center;
   border: 2px solid #00498f;
-  padding: 5px 15px;
+  padding: 5px 30px;
   color: #00498f;
   text-decoration: none;
   margin-top: 20px;
   display: inline-block;
   border-radius: 5px;
+}
+.contact_us .modal a:hover {
+  background: #00498f;
+  color: #fff;
+}
+.news {
+  padding: 90px 0;
+}
+.news .instr {
+  margin: 30px 0;
+}
+.news .instr p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: justify;
+  color: #00498f;
+  opacity: 60%;
+}
+.news .instr a {
+  margin-left: 140px;
+  width: 141px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #00498f;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}
+.news ul {
+  margin-bottom: 1px;
+}
+.news ul li {
+  list-style: none;
+  padding: 30px 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+.news ul li:hover {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.news .cont {
+  padding: 0 15px;
+  flex: 1;
+}
+.news .cont h6 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0px;
+  color: #00498f;
+}
+.news .cont p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: justified;
+  color: #666666;
+}
+.news .date {
+  width: 108px;
+  height: 147px;
+  background: linear-gradient(0deg, #EEEEEE, #EEEEEE);
+  border: 1px solid #EEEEEE;
+  text-align: center;
+  color: #AAAAAA;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.news .date span:first-child {
+  font-size: 40px;
+  line-height: 45px;
+}
+.news .date span:last-child {
+  font-size: 16px;
+  line-height: 18px;
 }
