@@ -94,6 +94,10 @@ body {
   visibility: hidden;
   clear: both;
 }
+ul,
+li {
+  list-style: none;
+}
 /* header */
 header {
   width: 100%;
@@ -132,11 +136,14 @@ header h2 {
   vertical-align: bottom;
   font-size: 14px;
 }
+header a {
+  color: #fff;
+}
 
 /* footer */
 footer {
   position: relative;
-  bottom: -197px;
+  bottom: -242px;
   text-align: left;
   background-color: #003055;
   color: #fff;
@@ -222,7 +229,6 @@ menu > ul {
   height: 60px;
   flex-direction: row;
   flex-wrap: nowrap;
-  list-style: none;
 }
 .menu li {
   font-family: inherit;
@@ -276,7 +282,7 @@ menu > ul {
 /* home */
 .main {
   position: relative;
-  top: 197px;
+  top: 242px;
 }
 .welcome {
   background-color: #f6f8fa;
@@ -286,6 +292,7 @@ menu > ul {
 .newsList .title,
 .contact_us .title,
 .research .title,
+.researchList .title,
 .welcome .title {
   font-weight: 700;
   font-size: 34px;
@@ -492,7 +499,6 @@ menu > ul {
   margin-bottom: 1px;
 }
 .newsList ul li {
-  list-style: none;
   padding: 30px 15px;
   border-bottom: 1px solid #eeeeee;
 }
@@ -523,6 +529,7 @@ menu > ul {
   height: 147px;
   background: linear-gradient(0deg, #eeeeee, #eeeeee);
   border: 1px solid #eeeeee;
+  border-radius: 5px;
   text-align: center;
   color: #aaaaaa;
   font-weight: 700;
@@ -554,7 +561,6 @@ menu > ul {
   width: 100px;
 }
 .publications_nav li {
-  list-style: none;
   padding: 5px;
   padding-left: 20px;
   border-left: 2px solid transparent;
@@ -607,9 +613,9 @@ menu > ul {
   letter-spacing: 0em;
   text-align: left;
   padding: 10px;
-  color: #5B5657;
+  color: #5b5657;
 }
-.publications dd a{
+.publications dd a {
   font-family: PingFang SC;
   font-size: 16px;
   font-weight: 400;
@@ -617,5 +623,74 @@ menu > ul {
   letter-spacing: 0em;
   text-align: left;
   padding: 10px;
-  color: #5B5657;
+  color: #5b5657;
+}
+/* researchList */
+.researchList {
+  padding: 90px 0;
+}
+.researchList .title_box {
+  font-family: PingFang SC;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #999999;
+}
+.researchList .title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 72px;
+  background-color: #00498f;
+  margin: 5px 0;
+}
+.researchList ul {
+  margin-top: 20px;
+}
+.researchList li {
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 20px 0;
+}
+.researchList .item_l {
+  width: 382px;
+  height: 232px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+.researchList .item_r {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.researchList .item_r p {
+  font-family: PingFang SC;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.85;
+}
+.researchList .item_r a {
+  display: block;
+  width: 135px;
+  height: 32px;
+  font-family: PingFang SC;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  background: #00498F;
+  color: #fff;
+  text-decoration: none;
 }
