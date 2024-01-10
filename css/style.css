@@ -129,6 +129,7 @@ header h2 {
 /* footer */
 footer {
   position: relative;
+  bottom: -197px;
   text-align: left;
   background-color: #003055;
   color: #fff;
@@ -274,7 +275,7 @@ menu > ul {
   padding: 90px 0;
   overflow: hidden;
 }
-.news .title,
+.newsList .title,
 .contact_us .title,
 .research .title,
 .welcome .title {
@@ -451,13 +452,14 @@ menu > ul {
   background: #00498f;
   color: #fff;
 }
-.news {
+/* news */
+.newsList {
   padding: 90px 0;
 }
-.news .instr {
+.newsList .instr {
   margin: 30px 0;
 }
-.news .instr p {
+.newsList .instr p {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -466,7 +468,7 @@ menu > ul {
   color: #00498f;
   opacity: 60%;
 }
-.news .instr a {
+.newsList .instr a {
   margin-left: 140px;
   width: 141px;
   height: 45px;
@@ -478,29 +480,29 @@ menu > ul {
   text-align: center;
   text-decoration: none;
 }
-.news ul {
+.newsList ul {
   margin-bottom: 1px;
 }
-.news ul li {
+.newsList ul li {
   list-style: none;
   padding: 30px 15px;
   border-bottom: 1px solid #eeeeee;
 }
-.news ul li:hover {
+.newsList ul li:hover {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
 }
-.news .cont {
+.newsList .cont {
   padding: 0 15px;
   flex: 1;
 }
-.news .cont h6 {
+.newsList .cont h6 {
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
   letter-spacing: 0px;
   color: #00498f;
 }
-.news .cont p {
+.newsList .cont p {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -508,7 +510,7 @@ menu > ul {
   text-align: justified;
   color: #666666;
 }
-.news .date {
+.newsList .date {
   width: 108px;
   height: 147px;
   background: linear-gradient(0deg, #EEEEEE, #EEEEEE);
@@ -520,11 +522,11 @@ menu > ul {
   flex-direction: column;
   justify-content: center;
 }
-.news .date span:first-child {
+.newsList .date span:first-child {
   font-size: 40px;
   line-height: 45px;
 }
-.news .date span:last-child {
+.newsList .date span:last-child {
   font-size: 16px;
   line-height: 18px;
 }
