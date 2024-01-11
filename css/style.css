@@ -189,6 +189,7 @@ footer {
 .f_top a {
   text-decoration: none;
   border-bottom: solid 1px #fff;
+  color: #fff;
 }
 .f_top img {
   width: 30px;
@@ -793,7 +794,7 @@ menu > ul {
   color: #333;
   line-height: 28px;
 }
-.news_detail .content_box{     
+.news_detail .content_box {
   margin-top: 20px;
 }
 .news_detail .content_box img {
@@ -801,8 +802,193 @@ menu > ul {
   margin: 15px auto;
 }
 /* people */
-.people {
+.people .personal_info {
+  background-color: #f9f9f9;
 }
+.people .wrap_box {
+  position: relative;
+}
+.people .personal_info img {
+  box-sizing: border-box;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  width: 220px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 8.5px 25.5px 0px rgba(0, 0, 0, 0.07);
+}
+.personal_info .name {
+  font-family: Alibaba PuHuiTi;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+  opacity: 85%;
+}
+.personal_info p {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.85);
+}
+.personal_info .school {
+  color: #00498f;
+  padding: 20px 0;
+}
+.personal_info .contact {
+  border-left: 8px solid #00498f;
+  padding-left: 10px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.people .email {
+  font-weight: 400;
+  color: #00498f;
+  opacity: 85%;
+}
+.personal_info .resonance {
+  font-family: Avenir Next;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 85%;
+}
+.personal_info .biography,
+.personal_info .hobbies {
+  margin-top: 30px;
+  opacity: 85%;
+  color: #000000;
+}
+.personal_info .biography h6,
+.personal_info .hobbies h6 {
+  font-family: Avenir Next;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  opacity: 85%;
+  text-align: left;
+}
+.personal_info .biography p,
+.personal_info .hobbies p {
+  font-family: Avenir Next;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: justified;
+  opacity: 65%;
+}
+.current_member .title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #0a498f;
+}
+.current_member .item {
+  margin-top: 30px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.current_member .item:hover {
+  background: #ffffff;
+  box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.07);
+}
+.current_member .item_l {
+  margin-right: 30px;
+}
+.current_member .item_r {
+  flex: 1;
+}
+.current_member .item img {
+  width: 120px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0px 8.5px 25.5px 0px rgba(0, 0, 0, 0.07);
+}
+.current_member .item .name {
+  font-family: Douyin Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  opacity: 85%;
+  color: #000000;
+}
+.current_member .item .position {
+  font-family: PingFang SC;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 15px 0 10px 0;
+}
+.current_member .personal_info {
+  width: 40%;
+}
+.current_member .resumeList {
+  flex: 1;
+}
+.current_member .resumeList li {
+  position: relative;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+.current_member .resumeList li:last-child {
+  margin-bottom: 0px;
+}
+.current_member .resumeList span {
+  border: 1px dashed #729ac1;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #729ac1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+.current_member .resumeList li::before {
+  content: "";
+  background: url("../images/people/li2.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 14px;
+  left: -20px;
+  width: 10px;
+  height: 36px;
+}
+.current_member .resumeList li:last-child::before {
+  background: url("../images/people/li.png") no-repeat;
+  height: 10px;
+  width: 10px;
+}
+.current_member .item_r .flex {
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.current_member .item_r > div:last-child {
+  font-family: PingFang SC;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 27px;
+  opacity: 65%;
+  color: #000000;
+  padding-top: 30px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.25);
+}
+
 /* opentings */
 .opentings {
 }
