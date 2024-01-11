@@ -98,6 +98,9 @@ ul,
 li {
   list-style: none;
 }
+.pt90 {
+  padding: 90px 0;
+}
 /* header */
 header {
   width: 100%;
@@ -286,7 +289,6 @@ menu > ul {
 }
 .welcome {
   background-color: #f6f8fa;
-  padding: 90px 0;
   overflow: hidden;
 }
 .newsList .title,
@@ -353,7 +355,6 @@ menu > ul {
 .research {
   background: url("../img/research.png") no-repeat;
   background-size: cover;
-  padding: 90px 0;
 }
 .research .wrap_box {
   display: flex;
@@ -415,7 +416,6 @@ menu > ul {
 .contact_us {
   background: url("../img/contact.png") no-repeat;
   background-size: cover;
-  padding: 90px 0;
   color: #fff;
 }
 .contact_us .title {
@@ -468,9 +468,6 @@ menu > ul {
   color: #fff;
 }
 /* news */
-.newsList {
-  padding: 90px 0;
-}
 .newsList .instr {
   margin: 30px 0;
 }
@@ -548,9 +545,7 @@ menu > ul {
 
 /* publications */
 .publications {
-  padding: 90px 0;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
-  /* display: flex; */
 }
 .publications_nav {
   margin-left: 5px;
@@ -626,9 +621,6 @@ menu > ul {
   color: #5b5657;
 }
 /* researchList */
-.researchList {
-  padding: 90px 0;
-}
 .researchList .title_box {
   font-family: PingFang SC;
   font-size: 20px;
@@ -694,3 +686,25 @@ menu > ul {
   color: #fff;
   text-decoration: none;
 }
+
+/* researchDetail */
+.researchDetail {
+
+}
+/* people */
+.people {
+
+}
+/* opentings */
+.opentings {
+
+}
+/* tearching */
+.tearching {
+
+}
+/* energyConverter */
+.energy_converter {
+
+}
+
