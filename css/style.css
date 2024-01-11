@@ -101,6 +101,33 @@ li {
 .pt90 {
   padding: 90px 0;
 }
+.title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: justify;
+  color: #0a498f;
+}
+/* 面包屑样式 researchDetail newsDetail */
+.breadcrumb {
+  font-family: Alibaba PuHuiTi;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: justify;
+  margin-top: 30px;
+}
+.breadcrumb span:first-child {
+  opacity: 0.65;
+}
+.breadcrumb img {
+  width: 4.5px;
+  padding: 0 5px;
+}
+.breadcrumb span:last-child {
+  color: #f18b1c;
+}
 /* header */
 header {
   width: 100%;
@@ -281,6 +308,7 @@ menu > ul {
 .banner img:first-child {
   z-index: 2;
 }
+/* 以上均是公共样式 */
 
 /* home */
 .main {
@@ -290,17 +318,6 @@ menu > ul {
 .welcome {
   background-color: #f6f8fa;
   overflow: hidden;
-}
-.newsList .title,
-.contact_us .title,
-.research .title,
-.researchList .title,
-.welcome .title {
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 46px;
-  text-align: justify;
-  color: #0a497a;
 }
 .welcome .content_box {
   margin-top: 40px;
@@ -682,29 +699,82 @@ menu > ul {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: center;
-  background: #00498F;
+  background: #00498f;
   color: #fff;
   text-decoration: none;
 }
 
 /* researchDetail */
-.researchDetail {
-
+.research_detail {
+  padding-bottom: 90px;
+}
+.research_detail .title_box {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.research_detail .author_date {
+  font-family: PingFang SC;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #999999;
+  margin-top: 15px;
+}
+.research_detail dt {
+  padding: 30px 0 20px 0;
+}
+.research_detail dd {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 0 20px 0;
+  line-height: 28px;
+}
+.research_detail h6 {
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
+}
+.research_detail p {
+  position: relative;
+  font-family: PingFang SC;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.85);
+  padding-bottom: 10px;
+}
+.research_detail .list p {
+  padding-left: 10px;
+}
+  .research_detail .list p::before {
+  content: "";
+  background-color: #000000;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+.research_detail dd img {
+  display: block;
+  margin: 10px auto;
 }
 /* people */
 .people {
-
 }
 /* opentings */
 .opentings {
-
 }
 /* tearching */
 .tearching {
-
 }
 /* energyConverter */
 .energy_converter {
-
 }
-
