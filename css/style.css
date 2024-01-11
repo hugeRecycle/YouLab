@@ -752,7 +752,7 @@ menu > ul {
 .research_detail .list p {
   padding-left: 10px;
 }
-  .research_detail .list p::before {
+.research_detail .list p::before {
   content: "";
   background-color: #000000;
   height: 5px;
@@ -765,6 +765,40 @@ menu > ul {
 .research_detail dd img {
   display: block;
   margin: 10px auto;
+}
+/* newsDetail */
+.news_detail {
+  padding-bottom: 90px;
+}
+.news_detail .title_box {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.news_detail .date {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #999999;
+  margin-top: 15px;
+}
+.news_detail p {
+  position: relative;
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #333;
+  line-height: 28px;
+}
+.news_detail .content_box{     
+  margin-top: 20px;
+}
+.news_detail .content_box img {
+  display: block;
+  margin: 15px auto;
 }
 /* people */
 .people {
