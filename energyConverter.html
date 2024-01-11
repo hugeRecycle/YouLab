@@ -12,8 +12,8 @@
 
 <body>
     <header>
-        <div class="wrap_box">
-            <div class="h-left">
+        <div class="wrap_box flex">
+            <div class="h-left flex">
                 <a class="university" href="https://github.com/hugeRecycle/YouLab">
                     <img id="logo" class="logo" src="img/logo.png" title="西湖大学" />
                 </a>
@@ -26,7 +26,7 @@
             <div class="h-center">
                 <h2>Multidimentional nanospectroscopy laboratory </h2>
             </div>
-            <div class="h-right">
+            <div class="h-right flex">
                 <img src="img/group.png" alt="">
                 <div class="btn_box">
                     <img src="img/earth_icon.png" alt="">
@@ -36,7 +36,7 @@
         </div>
     </header>
     <menu>
-        <ul class="menu wrap_box">
+        <ul class="menu wrap_box flex">
             <li class="active left"><a href="index.html">HOME</a></li>
             <li><a href="publications.html">PUBLICATIONS</a></li>
             <li class="right"><a href="researchList.html">RESEARCH</a></li>
@@ -51,74 +51,71 @@
         <img src="img/banner.png" />
     </div>
 
-    <div class="energy_converter wrap_box pt90">
+    <div class="energy_converter main wrap_box pd90">
         <div class="wavelength">
             <div class="title_box">
-                <h6>Wavelength - energy converter </h6>
-                <div>
-                    <span></span>
-                    <span>All felds are inputs/outputs</span>
-                </div>
+                <h6 class="title">Wavelength - energy converter </h6>
+                <p>All felds are inputs/outputs</p>
             </div>
             <div class="content_box">
-                <div class="content_top">
+                <div class="content_top flex">
                     <div>
                         <label>nm</label>
-                        <input/>
+                        <input />
                     </div>
                     <div>
                         <label>μm</label>
-                        <input/>
+                        <input />
                     </div>
                     <div>
                         <label>cm⁻¹</label>
-                        <input/>
+                        <input />
                     </div>
                 </div>
-                <div class="content_bottom">
+                <div class="content_bottom flex">
                     <div>
                         <label>meV</label>
-                        <input/>
+                        <input />
                     </div>
                     <div>
                         <label>joules</label>
-                        <input/>
+                        <input />
                     </div>
+                    <div></div>
                 </div>
             </div>
         </div>
         <div class="raman">
             <div class="title_box">
-                <h6>Raman Shift converter </h6>
-                <div>
-                    <span></span>
-                    <span>Enter the laser excitation wavelength (nm) and Raman shift either in nanometers (nm) or wavenumbers (cm-1) in order to convert units of the Raman shift.</span>
-                </div>
+                <h6 class="title">Raman Shift converter </h6>
+                <p>Enter the laser excitation wavelength (nm) and Raman shift either in nanometers (nm) or
+                    wavenumbers (cm-1) in order to convert units of the Raman shift.</p>
             </div>
             <div class="content_box">
-                <div class="content_top">
+                <div class="content_top flex">
                     <div>
                         <label>Excitation Wavelength* (nm)</label>
-                        <input/>
+                        <input />
                     </div>
                     <div>
                         <label>Raman Wavelength (nm)</label>
-                        <input/>
+                        <input />
                     </div>
                     <div>
                         <label>Raman Wavenumber (cm⁻¹)</label>
-                        <input/>
+                        <input />
                     </div>
                 </div>
-                <div class="content_bottom">
+                <div class="content_bottom flex">
                     <div>
                         <label>Raman Frequency (GHz)</label>
-                        <input/>
+                        <input disabled/>
                     </div>
                     <div>
                         <label>Raman Energy (meV)</label>
-                        <input/>
+                        <input disabled/>
                     </div>
+                    <div></div>
                 </div>
             </div>
         </div>
@@ -128,7 +125,7 @@
         <div class="f_top">
             <a href="./openings.html">CONTACT US <img src="./img/left.png" alt=""></a>
         </div>
-        <div class="f_bottom wrap_box">
+        <div class="f_bottom wrap_box flex">
             <div class="f_b_left">
                 <div class="f_logo_box">
                     <img class='bg' src="img/f_logo.png" />

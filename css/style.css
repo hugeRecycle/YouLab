@@ -98,7 +98,7 @@ ul,
 li {
   list-style: none;
 }
-.pt90 {
+.pd90 {
   padding: 90px 0;
 }
 .title {
@@ -996,5 +996,64 @@ menu > ul {
 .tearching {
 }
 /* energyConverter */
-.energy_converter {
+.energy_converter .title_box {
+  margin-bottom: 20px;
+}
+.energy_converter .title_box p {
+  font-family: PingFang SC;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #999;
+}
+.energy_converter .title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 72px;
+  background-color: #00498f;
+  margin: 5px 0;
+}
+.energy_converter .content_box {
+  width: 100%;
+  border: 1px solid #b3b3b3;
+}
+.energy_converter .content_top {
+  border-bottom: 1px solid #b3b3b3;
+}
+.energy_converter .content_box > div {
+  padding: 20px;
+}
+.energy_converter label{
+  font-family: PingFang SC;
+font-size: 20px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+opacity: 0.85;
+}
+.energy_converter input {
+  width: 200px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15) inset;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 19px;
+  line-height: 26px;
+}
+.energy_converter input[disabled] {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.energy_converter .content_top div,
+.energy_converter .content_bottom div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.raman {
+  margin-top: 90px;
 }
