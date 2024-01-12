@@ -562,7 +562,7 @@ menu > ul {
 }
 
 /* publications */
-.publications {
+.publications .wrap_box {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 .publications_nav {
@@ -1085,8 +1085,8 @@ menu > ul {
   text-decoration: underline;
 }
 .openings dl a::after {
-  content: '';
-  background: url('../images/openings/jiantou.png') no-repeat;
+  content: "";
+  background: url("../images/openings/jiantou.png") no-repeat;
   background-size: contain;
   position: absolute;
   bottom: 5px;
@@ -1099,8 +1099,81 @@ menu > ul {
   background: url("../images/openings/jiantou_hover.png") no-repeat;
 }
 
-/* tearching */
-.tearching {
+/* teaching */
+.teaching .wrap_box {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.teaching nav h6 {
+  font-family: PingFang SC;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 31px;
+  color: rgba(0, 0, 0, 0.85);
+  padding-left: 10px;
+}
+.teaching nav dt {
+  font-family: PingFang SC;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 5px 0 5px 20px;
+}
+.teaching nav {
+  margin-left: 5px;
+  float: left;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 100px;
+  width: 100px;
+}
+.teaching dd {
+  padding-left: 30px;
+}
+.teaching dd a {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
+}
+.teaching dd:hover a {
+  color: #00498f;
+}
+.teaching .content_box {
+  width: 83%;
+  float: right;
+}
+.teaching .title {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 34px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.teaching .content_box > p {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 85%;
+  color: #000;
+  padding-top: 20px;
+}
+.teaching .content_box img {
+  display: block;
+  width: 570px;
+  margin: 30px auto 10px auto;
+}
+.teaching .content_box img + div {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  opacity: 85%;
+  color: #000;
 }
 /* energyConverter */
 .energy_converter .title_box {
