@@ -992,6 +992,113 @@ menu > ul {
 /* opentings */
 .opentings {
 }
+.openings .join_us {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0 90px 0;
+}
+.join_us_l {
+  margin-right: 90px;
+}
+.join_us_l p {
+  font-family: PingFang SC;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.85;
+  color: #000000;
+  padding-top: 20px;
+}
+.openings .contact_box {
+  padding-left: 10px;
+  border-left: 5px solid #0a498f;
+}
+.openings .contact_box h6 {
+  font-family: Avenir Next;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #000000;
+}
+.openings .contact_box .email {
+  font-weight: 400;
+  color: #00498f;
+  opacity: 85%;
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 10px;
+}
+.openings .fellow,
+.openings .assistant {
+  margin-top: 45px;
+  border: 1px solid #d9d9d9;
+}
+.openings .top {
+  background: #f7f8fa;
+  height: 54px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+.openings .top h6 {
+  color: #ff6a29;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.openings .top img {
+  padding: 0 10px;
+}
+.openings dl {
+  padding: 10px;
+}
+.openings dl dt {
+  font-family: PingFang SC;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+  padding: 5px 0;
+}
+.openings dl dd {
+  font-family: PingFang SC;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 5px 0;
+}
+.openings dl a {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  position: relative;
+}
+.openings dd:hover a {
+  color: #00498f;
+  text-decoration: underline;
+}
+.openings dl a::after {
+  content: '';
+  background: url('../images/openings/jiantou.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 5px;
+  right: -25px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.openings dd:hover a::after {
+  background: url("../images/openings/jiantou_hover.png") no-repeat;
+}
+
 /* tearching */
 .tearching {
 }
@@ -1026,14 +1133,14 @@ menu > ul {
 .energy_converter .content_box > div {
   padding: 20px;
 }
-.energy_converter label{
+.energy_converter label {
   font-family: PingFang SC;
-font-size: 20px;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 0px;
-text-align: left;
-opacity: 0.85;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.85;
 }
 .energy_converter input {
   width: 200px;
