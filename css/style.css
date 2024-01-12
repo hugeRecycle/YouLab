@@ -268,12 +268,6 @@ menu > ul {
   text-align: center;
   flex: 1;
 }
-.menu .left {
-  text-align: left;
-}
-.menu .right {
-  text-align: right;
-}
 .menu li a {
   color: #fff;
   display: block;
@@ -283,7 +277,7 @@ menu > ul {
 .menu li img {
   margin-top: 20px;
 }
-.menu li.active a {
+.menu .active {
   color: #e58811;
   text-decoration: none;
 }
@@ -291,6 +285,13 @@ menu > ul {
   color: #e58811;
   font-size: 18px;
   text-decoration: none;
+}
+.menu li a:hover .list { 
+  display: block;
+}
+
+.menu .list {
+  display: none;
 }
 
 .banner {
