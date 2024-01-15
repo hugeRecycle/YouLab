@@ -532,6 +532,9 @@ menu > ul {
 .newsList ul li:hover {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
 }
+.newsList ul li a {
+  text-decoration: none;
+}
 .newsList .cont {
   padding: 0 15px;
   flex: 1;
