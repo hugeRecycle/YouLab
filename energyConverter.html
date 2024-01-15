@@ -9,6 +9,66 @@
     <link rel="stylesheet" type="text/css" href="css/style.css?t=4" />
     <link rel="stylesheet" type="text/css" href="css/iconfont.css?t=10" />
 </head>
+<script src="./js/jquery-2.1.4.min.js"></script>
+<script>
+
+   var LIGHT_SPEED = 299792458;
+   var E_VOLT = 1.602176634e-19;
+   var PLANK = 6.62607015e-34;
+   var CONST_CONVERT = PLANK * LIGHT_SPEED / E_VOLT * 1e9;
+
+   function get_raman_wavenumber(lambda0, lambda1) {
+      return (1.0 / lambda0 - 1.0 / lambda1) * Math.pow(10, 7)
+   }
+
+   function get_raman_wavelength(lambda0, deltaw) {
+      return 1.0 / (1.0 / lambda0 - deltaw * Math.pow(10, -7))
+   }
+
+   function get_raman_frequency(lambda0, lambda1) {
+      return LIGHT_SPEED * (lambda1 - lambda0) / (lambda0 * lambda1)
+   }
+
+   function get_rmev(lambda0, lambda1) {
+      return CONST_CONVERT * 1000.0 * (1.0 / lambda0 - 1.0 / lambda1)
+   }
+
+   $(document).ready(function () {// Raman Energy (meV)
+      $('#l1').on('input', function () {
+         var l0 = +$('#l0').val();
+         var l1 = +$('#l1').val();
+
+         $('#dw').val(get_raman_wavenumber(l0, l1).toFixed(2));
+         $('#rghz').val(get_raman_frequency(l0, l1).toFixed(2));
+         $('#rmev').val(get_rmev(l0, l1).toFixed(2));
+      });
+
+      $('#l0').on('input', function () {
+         if ($('#l1').val() !== "") {
+            var l0 = +$('#l0').val();
+            var l1 = +$('#l1').val();
+
+            $('#dw').val(get_raman_wavenumber(l0, l1).toFixed(2));
+            $('#rghz').val(get_raman_frequency(l0, l1).toFixed(2));
+            $('#rmev').val(get_rmev(l0, l1).toFixed(2));
+         }
+      });
+
+      $('#dw').on('input', function () {
+         var dw = +$('#dw').val();
+         var l0 = +$('#l0').val();
+
+         // update l1
+         $('#l1').val(get_raman_wavelength(l0, dw).toFixed(2));
+         var l1 = +$('#l1').val();
+
+         $('#rghz').val(get_raman_frequency(l0, l1).toFixed(2));
+         $('#rmev').val(get_rmev(l0, l1).toFixed(2));
+      });
+
+   });
+
+</script>
 
 <body>
     <header>
@@ -105,25 +165,25 @@
                 <div class="content_top flex">
                     <div>
                         <label>Excitation Wavelength* (nm)</label>
-                        <input />
+                        <input name="l0" id="l0" type="number"/>
                     </div>
                     <div>
                         <label>Raman Wavelength (nm)</label>
-                        <input />
+                        <input name="l1" id="l1" type="number" />
                     </div>
                     <div>
                         <label>Raman Wavenumber (cm⁻¹)</label>
-                        <input />
+                        <input name="dw" id="dw" type="number"/>
                     </div>
                 </div>
                 <div class="content_bottom flex">
                     <div>
                         <label>Raman Frequency (GHz)</label>
-                        <input disabled />
+                        <input name="rghz" id="rghz" type="number" disabled />
                     </div>
                     <div>
                         <label>Raman Energy (meV)</label>
-                        <input disabled />
+                        <input name="rmev" id="rmev" type="number" disabled />
                     </div>
                     <div></div>
                 </div>
