@@ -150,8 +150,7 @@ header h2 {
   letter-spacing: 0px;
   text-align: left;
 }
-.h-left .school,
-.h-right .btn_box {
+.h-left .school {
   margin-left: 10px;
   border-left: 1px solid #fff;
   padding-left: 15px;
@@ -161,8 +160,8 @@ header h2 {
   line-height: 13px;
   text-decoration: none;
 }
-.h-right .btn_box {
-  margin-top: 13px;
+.h-right span {
+  margin-top: 8px;
   vertical-align: bottom;
   font-size: 14px;
 }
