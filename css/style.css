@@ -187,7 +187,7 @@ footer {
   justify-content: center;
   font-size: 30px;
   height: 80px;
-  border-bottom: solid 2px #fff;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.8);
 }
 .f_top a {
   text-decoration: none;
