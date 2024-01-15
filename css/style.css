@@ -352,6 +352,36 @@ menu > ul {
 .banner img:first-child {
   z-index: 2;
 }
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.pagination img{
+  height: 16px;
+  padding: 7px;
+  background: #f9f9f9;
+}
+.p_item {
+  display: block;
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  border-radius: 5px;
+  text-align: center;
+  color: #666666;
+  background: #f9f9f9;
+}
+.p_item:hover{
+  background-color: #0a498f;
+  color: #ffffff;
+}
 /* 以上均是公共样式 */
 
 /* home */
@@ -396,10 +426,10 @@ menu > ul {
   text-align: justified;
   color: rgba(0, 0, 0, 0.65);
 }
-.welcome .content_l .img_box{
+.welcome .content_l .img_box {
   margin-right: 20px;
 }
-.welcome .content_l .img_box img{
+.welcome .content_l .img_box img {
   border-right: 20px solid #0a498f;
   padding-right: 10px;
 }
@@ -442,6 +472,9 @@ menu > ul {
   width: 30%;
   margin-right: 80px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .research .research_r {
   flex: 1;
@@ -698,7 +731,7 @@ menu > ul {
   position: absolute;
   top: 20px;
   left: -5px;
-  content: '';
+  content: "";
   width: 5px;
   height: 5px;
   border-radius: 100%;
