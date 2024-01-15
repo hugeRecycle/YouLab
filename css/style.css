@@ -198,6 +198,10 @@ footer {
 .f_bottom {
   padding: 50px 0;
 }
+.f_b_left,
+.f_b_right {
+  height: 100%;
+}
 .f_b_left img {
   display: block;
 }
@@ -225,18 +229,17 @@ footer {
   font-size: 14px;
   font-weight: 500;
 }
-.contact {
+.f_b_right .contact {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
-
-.contact img {
+.f_b_right .contact img {
   margin-right: 10px;
 }
 
-.contact .address_icon {
+.f_b_right .contact .address_icon {
   margin-left: 2px;
 }
 
