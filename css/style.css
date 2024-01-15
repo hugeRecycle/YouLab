@@ -730,6 +730,9 @@ menu > ul {
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.07);
   border-radius: 6px;
 }
+.researchList .item_l img {
+  width: 371px;
+}
 .researchList .item_r {
   margin-left: 100px;
   display: flex;
