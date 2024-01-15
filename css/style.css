@@ -640,6 +640,7 @@ menu > ul {
   color: #00498f;
   font-size: 22px;
   line-height: 30px;
+  font-weight: bold;
 }
 .publications_nav a {
   font-family: PingFang SC;
