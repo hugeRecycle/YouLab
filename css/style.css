@@ -252,7 +252,7 @@ footer {
 menu {
   position: relative;
   height: 60px;
-  background: #003055;
+  background: url("../img/nav_bg.png");
   background-size: contain;
   z-index: 9;
 }
@@ -330,6 +330,7 @@ menu > ul {
 .welcome .content_r {
   flex: 1;
   padding-left: 10px;
+  margin-left: 20px;
 }
 .welcome .cont {
   margin-top: 20px;
@@ -347,15 +348,22 @@ menu > ul {
 }
 .welcome .cont p {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: justified;
   color: rgba(0, 0, 0, 0.65);
 }
+.welcome .content_l .img_box {
+  padding-right: 10px;
+  border-right: 20px solid #0a498f;
+}
+.welcome .image {
+  width: 100%;
+}
 .welcome .content_r p {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 28px;
   letter-spacing: 0px;
   text-align: justified;
@@ -397,7 +405,7 @@ menu > ul {
   letter-spacing: 0px;
   text-align: left;
   color: #00498f;
-  margin: 15px 0;
+  margin: 20px 0;
   opacity: 0.6;
 }
 .research .research_l a {
@@ -419,7 +427,7 @@ menu > ul {
   text-align: left;
   color: #fff;
   background: #00498f;
-  padding-left: 20px;
+  padding: 20px;
   position: relative;
 }
 .research .research_r p::before {
@@ -429,7 +437,7 @@ menu > ul {
   width: 5px;
   background: #f18d00;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
 }
 .contact_us {
@@ -548,7 +556,7 @@ menu > ul {
   border-radius: 5px;
   text-align: center;
   color: #aaaaaa;
-  font-weight: 700;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -849,6 +857,7 @@ menu > ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-style: italic;
   margin: 30px 0;
 }
 .people .email {
@@ -954,7 +963,7 @@ menu > ul {
   border: 1px dashed #729ac1;
   border-radius: 6px;
   padding: 8px 10px;
-  color: #729ac1;
+  color: #2664A0;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1135,11 +1144,11 @@ menu > ul {
   font-family: PingFang SC;
   font-size: 16px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 0.55);
 }
 .teaching dd:hover a {
   color: #00498f;
