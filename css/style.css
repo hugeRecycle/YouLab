@@ -153,7 +153,7 @@ header h2 {
 .h-left .school,
 .h-right .btn_box {
   margin-left: 10px;
-  border-left: 2px solid #fff;
+  border-left: 1px solid #fff;
   padding-left: 15px;
 }
 .h-left .school {
@@ -162,9 +162,12 @@ header h2 {
   text-decoration: none;
 }
 .h-right .btn_box {
-  padding-top: 13px;
+  margin-top: 13px;
   vertical-align: bottom;
   font-size: 14px;
+}
+.h-right img {
+ margin-right: 10px;
 }
 header a {
   color: #fff;
