@@ -675,6 +675,8 @@ menu > ul {
   font-weight: 600;
 }
 .publications dd {
+  position: relative;
+  margin-left: 10px;
   font-family: PingFang SC;
   font-size: 16px;
   font-weight: 400;
@@ -683,6 +685,16 @@ menu > ul {
   text-align: left;
   padding: 10px;
   color: #5b5657;
+}
+.publications dd::before {
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 .publications dd a {
   font-family: PingFang SC;
