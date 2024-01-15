@@ -376,7 +376,7 @@ menu > ul {
   margin-left: 20px;
 }
 .welcome .cont {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .welcome .line {
   width: 300px;
@@ -392,17 +392,23 @@ menu > ul {
 .welcome .cont p {
   font-size: 18px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 0px;
   text-align: justified;
   color: rgba(0, 0, 0, 0.65);
 }
-.welcome .content_l .img_box {
-  padding-right: 10px;
+.welcome .content_l .img_box{
+  margin-right: 20px;
+}
+.welcome .content_l .img_box img{
   border-right: 20px solid #0a498f;
+  padding-right: 10px;
 }
 .welcome .image {
   width: 100%;
+}
+.welcome .content_r .image {
+  margin-top: 50px;
 }
 .welcome .content_r p {
   font-size: 15px;
@@ -416,6 +422,9 @@ menu > ul {
 .welcome .quotation_mark_l {
   width: 70px;
   height: 58px;
+}
+.welcome .quotation_mark_l {
+  margin-top: 50px;
 }
 .welcome .quotation_mark_r {
   float: right;
