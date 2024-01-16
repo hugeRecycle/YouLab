@@ -355,7 +355,6 @@ menu > ul {
 .pagination {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 20px;
 }
 .pagination img{
@@ -415,7 +414,7 @@ menu > ul {
 .welcome .cont h6 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 40px;
   color: #000000;
 }
 .welcome .cont p {
@@ -427,7 +426,7 @@ menu > ul {
   color: rgba(0, 0, 0, 0.65);
 }
 .welcome .content_l .img_box {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .welcome .content_l .img_box img {
   border-right: 20px solid #0a498f;
@@ -437,7 +436,7 @@ menu > ul {
   width: 100%;
 }
 .welcome .content_r .image {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .welcome .content_r p {
   font-size: 15px;
@@ -453,7 +452,7 @@ menu > ul {
   height: 58px;
 }
 .welcome .quotation_mark_l {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .welcome .quotation_mark_r {
   float: right;
