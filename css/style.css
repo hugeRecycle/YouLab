@@ -285,10 +285,10 @@ menu > ul {
   color: #e58811;
   text-decoration: none;
 }
+.menu li a:active,
 .menu li a:hover {
   color: #e58811;
   font-size: 18px;
-  text-decoration: none;
 }
 .menu li .resource {
   color: #ffffff;
