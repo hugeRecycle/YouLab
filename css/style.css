@@ -144,6 +144,7 @@ header .logo {
   height: 40px;
 }
 header h2 {
+  margin-right: 60px;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
@@ -353,6 +354,9 @@ menu > ul {
   width: 100%;
   position: absolute;
   top: 0;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 .banner img:first-child {
   z-index: 2;
