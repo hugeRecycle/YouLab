@@ -349,6 +349,11 @@ menu > ul {
   position: absolute;
   top: 0;
 }
+.banner video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
 .banner img:first-child {
   z-index: 2;
 }
