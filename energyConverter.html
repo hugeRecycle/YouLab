@@ -78,34 +78,34 @@
         var input_meV = document.getElementById("input_meV");
         var input_J = document.getElementById("input_J");
         if (source == "input_cm") {
-            input_nm.value = (10000000 / valNum).toExponential(5);
-            input_um.value = (10000 / valNum).toExponential(5);
-            input_meV.value = (valNum * 0.123984193).toExponential(5);
-            input_J.value = (valNum * 0.123984193 / 1000000 * 1.60217646e-19).toExponential(5);
+            input_nm.value = (10000000 / valNum).toFixed(2);
+            input_um.value = (10000 / valNum).toFixed(2);
+            input_meV.value = (valNum * 0.123984193).toFixed(2);
+            input_J.value = (valNum * 0.123984193 / 1000000 * 1.60217646e-19).toExponential(2);
         }
         if (source == "input_nm") {
-            input_cm.value = (10000000 / valNum).toExponential(5);
-            input_um.value = (valNum * 0.001).toExponential(5);
-            input_meV.value = (1239841.93 / valNum).toExponential(5);
-            input_J.value = (1239841.93 / valNum / 1000000 * 1.60217646e-19).toExponential(5);
+            input_cm.value = (10000000 / valNum).toFixed(2);
+            input_um.value = (valNum * 0.001).toFixed(2);
+            input_meV.value = (1239841.93 / valNum).toFixed(2);
+            input_J.value = (1239841.93 / valNum / 1000000 * 1.60217646e-19).toExponential(2);
         }
         if (source == "input_um") {
-            input_cm.value = (10000 / valNum).toExponential(5);
-            input_nm.value = (valNum * 1000).toExponential(5);
-            input_meV.value = (1239.84193 / valNum).toExponential(5);
-            input_J.value = (1239.84193 / valNum / 1000000 * 1.60217646e-19).toExponential(5);
+            input_cm.value = (10000 / valNum).toFixed(2);
+            input_nm.value = (valNum * 1000).toFixed(2);
+            input_meV.value = (1239.84193 / valNum).toFixed(2);
+            input_J.value = (1239.84193 / valNum / 1000000 * 1.60217646e-19).toExponential(2);
         }
         if (source == "input_meV") {
-            input_cm.value = (valNum * 8.065544290795).toExponential(5);
-            input_nm.value = (1239841.93 / valNum).toExponential(5);
-            input_um.value = (1239.84193 / valNum).toExponential(5);
-            input_J.value = ((valNum / 1000000) * 1.60217646e-19).toExponential(5);
+            input_cm.value = (valNum * 8.065544290795).toFixed(2);
+            input_nm.value = (1239841.93 / valNum).toFixed(2);
+            input_um.value = (1239.84193 / valNum).toFixed(2);
+            input_J.value = ((valNum / 1000000) * 1.60217646e-19).toExponential(2);
         }
         if (source == "input_J") {
-            input_meV.value = (valNum / 1.60217646e-19 * 1000000).toExponential(5);
-            input_cm.value = (valNum / 1.60217646e-19 * 1000000 * 8.065544290795).toExponential(5);
-            input_nm.value = (1239841.93 / valNum / 1.60217646e-19 * 1000000).toExponential(5);
-            input_um.value = (1239.84193 / valNum / 1.60217646e-19 * 1000000).toExponential(5);
+            input_meV.value = (valNum / 1.60217646e-19 * 1000000).toFixed(2);
+            input_cm.value = (valNum / 1.60217646e-19 * 1000000 * 8.065544290795).toFixed(2);
+            input_nm.value = (1239841.93 / valNum / 1.60217646e-19 * 1000000).toFixed(2);
+            input_um.value = (1239.84193 / valNum / 1.60217646e-19 * 1000000).toFixed(2);
         }
 
     }
