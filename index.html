@@ -8,7 +8,22 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css?t=4" />
     <link rel="stylesheet" type="text/css" href="css/iconfont.css?t=10" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
 </head>
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    })        
+</script>
 
 <body>
     <header>
@@ -89,10 +104,10 @@
                 <div class="research_l">
                     <div>
                         <h3 class="title">Research Focuses</h3>
-                    <p>Our focus is on unraveling the mysteries of surface/interface phenomena and the dynamic
-                        structures of
-                        liquids.</p>
-                    <a href="./researchList.html">Learn more</a>
+                        <p>Our focus is on unraveling the mysteries of surface/interface phenomena and the dynamic
+                            structures of
+                            liquids.</p>
+                        <a href="./researchList.html">Learn more</a>
                     </div>
                     <div class="pagination">
                         <img src="./img/left_jiantou.png" alt="">
@@ -104,18 +119,41 @@
                         <img src="./img/right_jiantou.png" alt="">
                     </div>
                 </div>
-                <div class="research_r">
-                    <img src="images/research/img1.png" alt="">
-                    <p>Solvation Structure and molecular interactions at Lipid-Water Interfaces Studied Through
-                        Vibrational
-                        Spectroscopy</p>
+                <div class="swiper-container research_r">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/research/img1.png" alt="">
+                            <p>Solvation Structure and molecular interactions at Lipid-Water Interfaces Studied Through
+                                Vibrational
+                                Spectroscopy</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/research/img1.png" alt="">
+                            <p>Solvation Structure and molecular interactions at Lipid-Water Interfaces Studied Through
+                                Vibrational
+                                Spectroscopy</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/research/img1.png" alt="">
+                            <p>Solvation Structure and molecular interactions at Lipid-Water Interfaces Studied Through
+                                Vibrational
+                                Spectroscopy</p>
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
         <div class="contact_us pd90">
             <div class="wrap_box">
                 <h3 class="title">Join Us on Our Scientific Journey:</h3>
-                <p>Our research group is driven by a passion for discovery and a commitment to pushing the boundaries of
+                <p>Our research group is driven by a passion for discovery and a commitment to pushing the
+                    boundaries of
                     knowledge. We invite you to embark on a scientific voyage with us as we unravel the intricate
                     mysteries
                     of biomolecules and push the frontiers of Physical Chemistry and Biophysics.</p>
@@ -123,10 +161,12 @@
                     devoted to
                     nurturing the next generation of scientists, fostering innovation, and providing a supportive
                     research
-                    environment. For detailed information about these opportunities, please visit our 「Website Link].
+                    environment. For detailed information about these opportunities, please visit our 「Website
+                    Link].
                 </p>
                 <div class="modal">
-                    <p>If you have any inquiries or are interested in collaborating with us,don't hesitate to reach out:
+                    <p>If you have any inquiries or are interested in collaborating with us,don't hesitate to reach
+                        out:
                     </p>
                     <a href="./openings.html">Contact Us</a>
                 </div>
@@ -136,7 +176,8 @@
             <div class="wrap_box">
                 <h3 class="title">The news we publish will show you</h3>
                 <div class="instr flex">
-                    <p>Our lab team prides itself on excellence in the field of optics, and our academic achievements
+                    <p>Our lab team prides itself on excellence in the field of optics, and our academic
+                        achievements
                         represent our commitment to science and our pursuit of excellence.</p>
                     <a href="./newsList.html">Find more</a>
                 </div>
@@ -147,8 +188,10 @@
                             <div class="cont">
                                 <h6>Lectures on Raman Spectroscopy Technology on Molecular Science Platform
                                 </h6>
-                                <p>Organic Element Analyzer is mainly used for accurate determination of carbon, hydrogen,
-                                    nitrogen, sulfur, oxygen and other elements in organic compounds, which can meet the
+                                <p>Organic Element Analyzer is mainly used for accurate determination of carbon,
+                                    hydrogen,
+                                    nitrogen, sulfur, oxygen and other elements in organic compounds, which can meet
+                                    the
                                     testing
                                     requirements of various types of matrix samples and is widely usr …</p>
                             </div>
@@ -163,9 +206,11 @@
                             <img src="images/news/news.png" alt="">
                             <div class="cont">
                                 <h6>Lectures on Raman Spectroscopy Technology on Molecular Science Platform
-</h6>
-                                <p>Organic Element Analyzer is mainly used for accurate determination of carbon, hydrogen,
-                                    nitrogen, sulfur, oxygen and other elements in organic compounds, which can meet the
+                                </h6>
+                                <p>Organic Element Analyzer is mainly used for accurate determination of carbon,
+                                    hydrogen,
+                                    nitrogen, sulfur, oxygen and other elements in organic compounds, which can meet
+                                    the
                                     testing
                                     requirements of various types of matrix samples and is widely usr …</p>
                             </div>
@@ -180,9 +225,11 @@
                             <img src="images/news/news.png" alt="">
                             <div class="cont">
                                 <h6>Lectures on Raman Spectroscopy Technology on Molecular Science Platform
-</h6>
-                                <p>Organic Element Analyzer is mainly used for accurate determination of carbon, hydrogen,
-                                    nitrogen, sulfur, oxygen and other elements in organic compounds, which can meet the
+                                </h6>
+                                <p>Organic Element Analyzer is mainly used for accurate determination of carbon,
+                                    hydrogen,
+                                    nitrogen, sulfur, oxygen and other elements in organic compounds, which can meet
+                                    the
                                     testing
                                     requirements of various types of matrix samples and is widely usr …</p>
                             </div>
@@ -197,9 +244,11 @@
                             <img src="images/news/news.png" alt="">
                             <div class="cont">
                                 <h6>Lectures on Raman Spectroscopy Technology on Molecular Science Platform
-</h6>
-                                <p>Organic Element Analyzer is mainly used for accurate determination of carbon, hydrogen,
-                                    nitrogen, sulfur, oxygen and other elements in organic compounds, which can meet the
+                                </h6>
+                                <p>Organic Element Analyzer is mainly used for accurate determination of carbon,
+                                    hydrogen,
+                                    nitrogen, sulfur, oxygen and other elements in organic compounds, which can meet
+                                    the
                                     testing
                                     requirements of various types of matrix samples and is widely usr …</p>
                             </div>
