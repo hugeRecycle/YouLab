@@ -358,7 +358,6 @@ menu > ul {
 .pagination {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 .pagination img {
   height: 16px;
@@ -484,7 +483,7 @@ menu > ul {
 .research .research_l p {
   font-size: 20px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 40px;
   letter-spacing: 0px;
   text-align: left;
   color: #00498f;
