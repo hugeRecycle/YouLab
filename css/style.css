@@ -439,7 +439,7 @@ menu > ul {
 }
 .research .research_l {
   width: 30%;
-  margin-right: 80px;
+  margin-right: 180px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -470,16 +470,27 @@ menu > ul {
   border: 1px solid #00498f;
 }
 .swiper-slide div {
-  height: 380px;
+  height: 300px;
   width: 100%;
   text-align: center;
   line-height: 380px;
   background: #fff;
   box-sizing: border-box;
 }
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.swiper-container .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
 .research .research_r img {
   padding: 10px;
-  height: 360px;
+  height: 280px;
   box-sizing: border-box;
   object-fit: contain;
 }
@@ -491,7 +502,7 @@ menu > ul {
   text-align: left;
   color: #fff;
   background: #00498f;
-  padding: 20px;
+  padding: 10px 20px 30px 10px;
   position: relative;
 }
 .research .research_r p::before {
@@ -501,7 +512,7 @@ menu > ul {
   width: 5px;
   background: #f18d00;
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 0;
 }
 .contact_us {
