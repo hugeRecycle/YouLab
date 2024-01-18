@@ -355,34 +355,6 @@ menu > ul {
 .banner img:first-child {
   z-index: 2;
 }
-.pagination {
-  display: flex;
-  align-items: center;
-}
-.pagination img {
-  height: 16px;
-  padding: 7px;
-  background: #f9f9f9;
-}
-.p_item {
-  display: block;
-  margin: 0 10px;
-  width: 30px;
-  height: 30px;
-  font-family: PingFang SC;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0px;
-  border-radius: 5px;
-  text-align: center;
-  color: #666666;
-  background: #f9f9f9;
-}
-.p_item:hover {
-  background-color: #0a498f;
-  color: #ffffff;
-}
 /* 以上均是公共样式 */
 
 /* home */
@@ -497,11 +469,19 @@ menu > ul {
   padding: 10px 15px;
   border: 1px solid #00498f;
 }
-.research .research_r img {
+.swiper-slide div {
+  height: 380px;
   width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
+  text-align: center;
+  line-height: 380px;
   background: #fff;
+  box-sizing: border-box;
+}
+.research .research_r img {
+  padding: 10px;
+  height: 360px;
+  box-sizing: border-box;
+  object-fit: contain;
 }
 .research .research_r p {
   font-size: 18px;
