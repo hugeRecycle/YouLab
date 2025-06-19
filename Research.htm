@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RESEARCH-YouGroup</title>
+    <META Name="keywords" Content="YouGroup"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+</head>
+<script>var isZh = location.href.includes("zh") </script>
+<body>
+<header>
+    <div class="wrap_box">
+        <div class="h-center">Multidimentional Nanospectroscopy Laboratory</div>
+
+        <!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+        <div class="h-left logo_box enCont">
+            <a class="link1" href="https://www.westlake.edu.cn/"></a>
+            <img class="logo" href="https://www.westlake.edu.cn/" title="Optical Imaging and Spectroscopy Laboratory"
+                 src="img/logo.png"/>
+            <a class="link2" href="https://engineering.westlake.edu.cn/"></a>
+        </div>
+        <div class="h-left logo_box zhCont">
+            <a class="link1" href="https://www.westlake.edu.cn/"></a>
+            <img class="logo" href="https://www.westlake.edu.cn/" title="Optical Imaging and Spectroscopy Laboratory"
+                 src="img/logo_zh.png"/>
+            <a class="link2" href="https://engineering.westlake.edu.cn/"></a>
+        </div>
+        <div class="h-right">
+            <img id="group" class="group" src="img/group.png" height="31" style="text-wrap: wrap;"/>
+            <a class="lang" id="langBtn" href="javascript:;">中文</a>
+        </div>
+        <script>
+            var langBtn = document.getElementById("langBtn");
+            langBtn.innerHTML = isZh ? "EN" : "中文";
+            langBtn.onclick = function () {
+                var path = location.pathname.split("zh").pop();
+                location.href = isZh ? path : "/zh" + path;
+            }
+            document.body.className = isZh ? "zhBody" : "enBody";
+        </script>
+
+
+    </div>
+</header>
+<menu>
+    <ul class="menu wrap_box flex enCont">
+        <li class="flex">
+            <a href="index.htm">HOME</a>
+        </li>
+        <!--
+            -->
+        <li class="flex">
+            <a class="active" href="Research.htm">RESEARCH</a>
+        </li>
+        <!--
+            -->
+        <li class="flex">
+            <a href="Publications.htm">PUBLICATIONS</a>
+        </li>
+        <!--
+                <li class="flex menu_logo"><img src="img/label.png" width="50" alt=""></li>
+            -->
+        <li class="flex">
+            <a href="People.htm">PEOPLE</a>
+        </li>
+        <!--
+            -->
+        <li class="flex">
+            <a href="Resource.htm">RESOURCE</a>
+            <div class="list">
+                <a href="Resource/Teaching.htm">Teaching</a>
+                <a href="Resource/EnergyConverter.htm">EnergyConverter</a>
+            </div>
+        </li>
+        <!--
+            -->
+        <!--
+            -->
+    </ul>
+
+    <ul class="menu wrap_box flex zhCont">
+        <li class="flex">
+            <a href="zh/index.htm">首页</a>
+        </li>
+        <!--
+              -->
+        <li class="flex">
+            <a href="zh/Research.htm">研究内容</a>
+        </li>
+        <!--
+              -->
+        <li class="flex">
+            <a href="zh/Publications.htm">出版物</a>
+        </li>
+        <!--
+               <li class="flex menu_logo"><img src="img/label.png" width="50" alt=""></li>
+              -->
+        <li class="flex">
+            <a href="zh/People.htm">团队成员</a>
+        </li>
+        <!--
+              -->
+        <li class="flex">
+            <a href="zh/Resource.htm">资源</a>
+            <div class="list">
+                <a href="zh/Resource/Teaching.htm">参考资料</a>
+                <a href="zh/Resource/EnergyConverter.htm">公式计算器</a>
+            </div>
+        </li>
+        <!--
+              -->
+    </ul>
+</menu>
+<div class="banner">
+
+
+    <p>
+        <img src="img/pointer.png"/>
+    </p>
+    <video src="img/banner.mp4" poster="img/banner.png" autoplay="" muted="" loop="" alt=""></video>
+
+</div>
+
+<div class="main">
+    <div class="researchList pd90 wrap_box">
+
+        <div class="title_box">
+            <h3>Research Focus</h3>
+            <hr size="2">
+            <p style="text-align: justify;">At the Multidimensional Nanospectroscopy Laboratory, our research focuses on
+                understanding the ultrafast dynamics, molecular interactions, and structural properties of complex
+                liquids. These systems often exhibit mesoscopic structures—dynamic arrangements extending beyond the
+                immediate molecular scale—and undergo phase transitions that impact their functions.</p>
+            <p><span style="text-align: justify;">Examples of our study subjects include: Biological water and interfacial water, Liquid-liquid phase separation (LLPS)-driven processes, Lipid membranes, Drug-delivery systems, Reactive deep eutectic solvents (DES). These systems represent a fascinating intersection of chemistry, biology, and materials science, where understanding their molecular-scale properties is key to unlocking their potential.</span>
+            </p>
+            <p><br></p>
+            <h4>The Interplay of Dynamics, Interactions, and Structure</h4>
+            <p style="text-align: justify;">In all these systems, the properties and functions arise from the delicate
+                interplay between molecular dynamics (how molecules move), intermolecular interactions (how they attract
+                or repel each other), and structural organization (how molecules arrange themselves over time).</p>
+            <p><span style="text-align: justify;">A central feature of our research is the study of hydrogen bonding. The dynamics of hydrogen bonds—how they form, break, and reform—are fundamental to processes like solvation, biochemical reactions, and energy transport. The interplay between fast molecular motions (temporal dynamics) and the spatial heterogeneity of molecular environments is particularly critical for understanding how these systems operate.</span>
+            </p>
+            <p><span style="text-align: justify;">For example, biological water behaves differently from bulk water due to interactions with proteins, membranes, and interfaces, influencing processes like protein folding and cellular energy flow. Similarly, LLPS-driven biomolecular condensates rely on dynamic intermolecular interactions to form and function, offering insights into cellular compartmentalization and disease mechanisms.</span>
+            </p>
+            <p><br></p>
+            <h4>Spectroscopic Approach</h4>
+            <p style="text-align: justify;">To achieve these research goals, the You group pioneers in advanced
+                time-resolved and sub-diffraction-limit spectroscopic techniques, such as 2D Infrared Spectroscopy
+                (2DIR), Tip-Enhanced Raman Spectroscopy (TERS), Scanning Near-Field Optical Microscopy (s-SNOM). These
+                methods allow us to probe solution and interface dynamics with high spatial and temporal resolution. Our
+                experiments are complemented by molecular dynamics (MD) simulations and density functional theory (DFT)
+                calculations, which help us interpret experimental data and develop a molecular-level understanding.
+                This intrdisciplinary approach enhances our ability to unravel the complexities of hydrogen bonding in
+                biological systems.</p>
+            <p><br></p>
+            <h4>Ongoing Research Projects</h4>
+            <h5>· Macromolecular Liquid-Liquid Phase Separation (LLPS)</h5>
+            <p><br></p>
+            <h5>· Functional Materials Interfaces</h5>
+            <p><br></p>
+            <h5>· Hydrogen Bond Dynamics</h5>
+            <p><br></p>
+            <h5>· Chirality and CISS Effect</h5>
+            <p><br></p>
+        </div>
+        <ul class="content_list">
+            <li>
+                <div class="item_l">
+                    <img src="__local/6/82/62/071DA7E61C15AE16A887570AF2B_DDBE8749_5801F.png"/>
+                </div>
+                <div class="item_r">
+                    <h4>Exploring the Ultrafast Dynamics of Water in both in both bulk solution, biological interfaces
+                        and liquid-liquid phase separation systems</h4>
+                    <a href="Publications.htm" class="enCont">Learn more</a>
+                    <a href="Publications.htm" class="zhCont">了解更多</a>
+                </div>
+            </li>
+            <li>
+                <div class="item_l">
+                    <img src="__local/2/F9/34/1121568C25DDE0E00E94E1A43A0_C3B45E8F_59D7A.png"/>
+                </div>
+                <div class="item_r">
+                    <h4>Leveraging TERS based chemical mapping for the investigation of the self-reduction process of
+                        graphene oxide, with improved spatially resolution and spectral sensitivity</h4>
+                    <a href="PDF/Nanoscale_insights_into_graphene_oxide_reduction_by_tip-enhanced_Raman_spectroscopy.pdf"
+                       class="enCont">Learn more</a>
+                    <a href="PDF/Nanoscale_insights_into_graphene_oxide_reduction_by_tip-enhanced_Raman_spectroscopy.pdf"
+                       class="zhCont">了解更多</a>
+                </div>
+            </li>
+            <li>
+                <div class="item_l">
+                    <img src="__local/6/BD/2F/1BD4263E3AACF2A53C2E850D5D0_D801B6C5_6189E.png"/>
+                </div>
+                <div class="item_r">
+                    <h4>Solvation Structure and molecular interactions at Lipid–Water Interfaces Studied Through
+                        Vibrational Spectroscopy</h4>
+                    <a href="PDF/Molecular_Mechanism_of_Cell_Membrane_Protection_by_Sugars_A_Study_of_Interfacial_H-Bond_Networks.pdf"
+                       class="enCont">Learn more</a>
+                    <a href="PDF/Molecular_Mechanism_of_Cell_Membrane_Protection_by_Sugars_A_Study_of_Interfacial_H-Bond_Networks.pdf"
+                       class="zhCont">了解更多</a>
+                </div>
+            </li>
+            <li>
+                <div class="item_l">
+                    <img src="__local/C/45/40/904FB27B3E8A37764220A00AC22_121C5C36_2302D.png"/>
+                </div>
+                <div class="item_r">
+                    <h4>The distinctive feature of liquid water in its extended H-bond network. Explore the multiscale
+                        dynamics of water linked to different water motions.</h4>
+                    <a href="PDF/Importance_of_Hydrogen_Bonding_in_Crowded_Environments_A_Physical_Chemistry_Perspective.pdf"
+                       class="enCont">Learn more</a>
+                    <a href="PDF/Importance_of_Hydrogen_Bonding_in_Crowded_Environments_A_Physical_Chemistry_Perspective.pdf"
+                       class="zhCont">了解更多</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="f_top">
+        <!--
+        <a class="enCont" href='Contact.htm'>Contact Us<img src="/img/left.png" alt="img"></a>
+        <a class="zhCont" href='zh/Contact.htm'>联系我们<img src="/img/left.png" alt="img"></a>
+        --></div>
+    <div class="f_bottom wrap_box flex">
+        <div class="f_b_left">
+            <!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+            <div class="record_info">
+                <p>
+                    <img class="bg" src="__local/A/0A/ED/0EE4FCA99F43AA7C672A88AD793_40BBE6B2_2D08.png%3Fe=.png"
+                         width="" height="60"/><img class="bg"
+                                                    src="__local/B/D4/51/CE9167D112CF12CDE8B18B8DB91_40A3DAE5_E43.png%3Fe=.png"
+                                                    width="133" height="60"/>
+                </p>
+                <p>
+                    <br/>
+                </p>
+
+                <p>
+                    浙ICP备18025489号
+                </p>
+                <p>
+                    浙公安备33010602007514号<br/>
+                </p>
+                <p>
+                    Copyright © Westlake University. All Rights Reserved
+                </p>
+            </div>
+
+        </div>
+        <div class="f_b_right">
+            <div class="collaboration">
+                <h3 class="enCont">
+                    Collaboration and Funding
+                </h3>
+                <h3 class="zhCont">
+                    合作和资助
+                </h3>
+                <p>
+                    <a href="https://synbio-zeng.lab.westlake.edu.cn" target="_blank">Laboratory of Synthetic Biology
+                        and Bioengineering</a>
+                </p>
+                <p>
+                    <a href="https://baizgroup.org" target="_blank">Baiz Group at UT Austin</a>
+                </p>
+                <p>
+                    <a href="https://engineering.westlake.edu.cn" target="_blank">School of Engineering</a>
+                </p>
+            </div>
+
+
+            <div class="contact">
+                <div>
+                    <img src="img/address_icon.png" class="img_vsb_content" vsbhref="vurl" vurl="/img/address_icon.png"
+                         vheight="" vwidth="" orisrc="img/address_icon.png">&nbsp;Address: E3-311 No.600 Dunyu Road,
+                    Hangzhou 310030, Zhejiang Province, China
+                </div>
+                <div>
+                    <img class="img_vsb_content" src="img/email_icon.png" vsbhref="vurl" vurl="/img/email_icon.png"
+                         vheight="" vwidth="" orisrc="img/email_icon.png">Email: youxiao@westlake.edu.cn
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>YouGroup</title>
+    <META Name="keywords" Content="YouGroup"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ax.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
+    <script src="swiper/swiper-3.4.2.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+<script>var isZh = location.href.includes("zh") </script>
+<header>
+    <div class="wrap_box">
+        <div class="h-center">Multidimentional Nanospectroscopy Laboratory</div>
+
+        <!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+        <div class="h-left logo_box enCont">
+            <a class="link1" href="https://www.westlake.edu.cn/"></a>
+            <img class="logo" href="https://www.westlake.edu.cn/" title="Optical Imaging and Spectroscopy Laboratory"
+                 src="img/logo.png"/>
+            <a class="link2" href="https://engineering.westlake.edu.cn/"></a>
+        </div>
+        <div class="h-left logo_box zhCont">
+            <a class="link1" href="https://www.westlake.edu.cn/"></a>
+            <img class="logo" href="https://www.westlake.edu.cn/" title="Optical Imaging and Spectroscopy Laboratory"
+                 src="img/logo_zh.png"/>
+            <a class="link2" href="https://engineering.westlake.edu.cn/"></a>
+        </div>
+        <div class="h-right">
+            <img id="group" class="group" src="img/group.png" height="31" style="text-wrap: wrap;"/>
+            <a class="lang" id="langBtn" href="javascript:;">中文</a>
+        </div>
+        <script>
+            var langBtn = document.getElementById("langBtn");
+            langBtn.innerHTML = isZh ? "EN" : "中文";
+            langBtn.onclick = function () {
+                var path = location.pathname.split("zh").pop();
+                location.href = isZh ? path : "/zh" + path;
+            }
+            document.body.className = isZh ? "zhBody" : "enBody";
+        </script>
+
+
+    </div>
+</header>
+<menu>
+    <ul class="menu wrap_box flex enCont">
+        <li class="flex">
+            <a class="active" href="index.htm">HOME</a>
+        </li>
+        <!--
+            -->
+        <li class="flex">
+            <a href="Research.htm">RESEARCH</a>
+        </li>
+        <!--
+            -->
+        <li class="flex">
+            <a href="Publications.htm">PUBLICATIONS</a>
+        </li>
+        <!--
+                <li class="flex menu_logo"><img src="img/label.png" width="50" alt=""></li>
+            -->
+        <li class="flex">
+            <a href="People.htm">PEOPLE</a>
+        </li>
+        <!--
+            -->
+        <li class="flex">
+            <a href="Resource.htm">RESOURCE</a>
+            <div class="list">
+                <a href="Resource/Teaching.htm">Teaching</a>
+                <a href="Resource/EnergyConverter.htm">EnergyConverter</a>
+            </div>
+        </li>
+        <!--
+            -->
+        <!--
+            -->
+    </ul>
+
+    <ul class="menu wrap_box flex zhCont">
+        <li class="flex">
+            <a href="zh/index.htm">首页</a>
+        </li>
+        <!--
+              -->
+        <li class="flex">
+            <a href="zh/Research.htm">研究内容</a>
+        </li>
+        <!--
+              -->
+        <li class="flex">
+            <a href="zh/Publications.htm">出版物</a>
+        </li>
+        <!--
+               <li class="flex menu_logo"><img src="img/label.png" width="50" alt=""></li>
+              -->
+        <li class="flex">
+            <a href="zh/People.htm">团队成员</a>
+        </li>
+        <!--
+              -->
+        <li class="flex">
+            <a href="zh/Resource.htm">资源</a>
+            <div class="list">
+                <a href="zh/Resource/Teaching.htm">参考资料</a>
+                <a href="zh/Resource/EnergyConverter.htm">公式计算器</a>
+            </div>
+        </li>
+        <!--
+              -->
+    </ul>
+</menu>
+<div class="banner">
+
+
+    <p>
+        <img src="img/pointer.png"/>
+    </p>
+    <video src="img/banner.mp4" poster="img/banner.png" autoplay="" muted="" loop="" alt=""></video>
+
+</div>
+
+<div class="main">
+    <div class="welcome pd90">
+        <div class="wrap_box">
+
+            <h3 class="title">Welcome to the You Group at Westlake University!</h3>
+            <div class="content_box flex">
+                <div class="content_l">
+
+                    <div class="mission_box">
+                        <p><img src="images/home/img.jpg.png" vsbhref="vurl" vurl="../images/home/img.jpg.png"
+                                vheight="" vwidth="" orisrc="../images/home/img.jpg.png" class="img_vsb_content"></p>
+                        <h6>Our Mission</h6>
+                        <p style="text-align: justify;">Welcome to the <strong>Multidimensional Nanospectroscopy
+                            Laboratory</strong>, led by <a href="People.htm" target="_blank">Dr. Xiao You.</a> Our
+                            research focuses on understanding the ultrafast dynamics, molecular interactions, and
+                            structural properties of complex liquids. Our research bridges molecular-scale behavior with
+                            macroscopic functionality. Through cutting-edge spectroscopic techniques, computational
+                            modeling, and interdisciplinary collaboration, we aim to:</p>
+                        <p><br></p>
+                        <ul>
+                            <li><p style="text-align: justify;">1) Illuminate the dynamic processes driving hydrogen
+                                bonding, phase transitions, and mesoscopic structures in complex liquids.</p></li>
+                            <br>
+                            <li></li>
+                            <li><p style="text-align: justify;">2) Provide molecular-level insights into biologically
+                                relevant systems, such as interfacial water, biomolecular condensates, and lipid
+                                membranes, to reveal their roles in cellular function and real-world applications.</p>
+                            </li>
+                            <br>
+                            <li></li>
+                            <li><p style="text-align: justify;">3) Develop innovative methods to study spatial and
+                                temporal heterogeneity in biological systems, providing new tools for understanding
+                                their complexity.</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_r">
+
+                    <div class="message_box">
+                        <p style="text-align: justify;">“Resonance, the utmost elegance. As light resonates, amplifying
+                            energy in perfect harmony, so too do our hearts and minds converge at Westlake University,
+                            where we find beauty in the resonance among people.”</p>
+                    </div>
+                    <div class="picsBox swiper-container0">
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide" href="javascript:;">
+                                <div>
+                                    <img src="images/home/pics/WechatIMG6516.jpg">
+                                </div>
+                                <p class="text">笔尖-高梓民摄</p>
+                            </a>
+                            <a class="swiper-slide" href="javascript:;">
+                                <div>
+                                    <img src="images/home/pics/WechatIMG1425.jpg">
+                                </div>
+                                <p class="text">校园倒影——高梓民摄</p>
+                            </a>
+                            <a class="swiper-slide" href="javascript:;">
+                                <div>
+                                    <img src="images/home/pics/9af70f281ade7f353d96eb28eabaf4ef.jpg">
+                                </div>
+                                <p class="text">校园晚霞——聂凤桐摄</p>
+                            </a>
+                            <a class="swiper-slide" href="javascript:;">
+                                <div>
+                                    <img src="images/home/pics/WechatIMG1427.jpg">
+                                </div>
+                                <p class="text">校园倒影——高梓民摄</p>
+                            </a>
+                            <a class="swiper-slide" href="javascript:;">
+                                <div>
+                                    <img src="images/home/pics/0ef8c388be6138e91b7c795a23142008.png">
+                                </div>
+                                <p class="text">校园晚霞——聂凤桐摄</p>
+                            </a>
+                        </div>
+                    </div>
+                    <script>
+                        var mySwiper0 = new Swiper('.swiper-container0', {
+                            autoplay: 5000,//可选选项，自动滑动
+                            loop: true,
+                            disableOnInteraction: false
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsList pd90">
+        <div class="wrap_box">
+
+            <div class="newsTop">
+                <h3> News<a href="News.htm">Find more</a></h3>
+            </div>
+
+            <div class="dn-lower">
+                <div class="ax-swiper swiper1 overflow-visible">
+                    <ul class="ax-wrapper wrapper1 ax-grid display-grid ax-grid-3 ax-split-1">
+                        <li class="ax-slide slide1 ax-bg-ignore">
+                            <a href="info/1099/1125.htm"
+                               title="The first Shanghai Conference on Ultrafast Dynamics of Complex Systems was successfully held, and You Xiao's team won the &quot;Excellent Poster Award&quot;">
+                                <img class="dn-picture dp-img1 com-size-all-img com-object-fit-cover ax-fadeIn"
+                                     src="__local/D/5D/C6/A8F9F2CA6A212F300B1F56F873B_0D80B98F_9B6CA.jpg">
+                                <div class="dn-word ax-xxl text-align-justify">
+                                    <h6>The first Shanghai Conference on Ultrafast Dynamics of Complex Systems was
+                                        successfully held, and You Xiao's team won the "Excellent Poster Award"</h6>
+                                    <div class="dp-intr1 ax-padding-top ax-md overflow-ellipsis-2">April 25, 2025-The
+                                        first "Shanghai Conference on Ultrafast Dynamics of Complex Systems" hosted by
+                                        Shanghai Jiao Tong ...
+                                    </div>
+                                    <div class="dp-time1 ax-color-ignore ax-padding-top ax-sm "> 2025-04-29</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="ax-slide slide1 ax-bg-ignore">
+                            <a href="info/1099/1096.htm" title="2DQuick IR system is installed！">
+                                <img class="dn-picture dp-img1 com-size-all-img com-object-fit-cover ax-fadeIn"
+                                     src="__local/A/89/A9/8BE00AB7C406E265878138573C1_02030D5D_9ACED.jpeg">
+                                <div class="dn-word ax-xxl text-align-justify">
+                                    <h6>2DQuick IR system is installed！</h6>
+                                    <div class="dp-intr1 ax-padding-top ax-md overflow-ellipsis-2">In August 2024, our
+                                        laboratory received the long-awaited equipment for the 2DQuick IR system, a
+                                        cutting-edge technolo...
+                                    </div>
+                                    <div class="dp-time1 ax-color-ignore ax-padding-top ax-sm "> 2024-08-30</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="ax-slide slide1 ax-bg-ignore">
+                            <a href="info/1099/1123.htm" title="Spring Outing at Jingshan Temple">
+                                <img class="dn-picture dp-img1 com-size-all-img com-object-fit-cover ax-fadeIn"
+                                     src="__local/4/69/30/C33AEC5FB595AD5B71958F14071_3E008180_BCFB7.jpg">
+                                <div class="dn-word ax-xxl text-align-justify">
+                                    <h6>Spring Outing at Jingshan Temple</h6>
+                                    <div class="dp-intr1 ax-padding-top ax-md overflow-ellipsis-2">On April 10, all
+                                        members of the laboratory went to Yuhang Jingshan Temple for a spring outing.
+                                        After arriving at the ...
+                                    </div>
+                                    <div class="dp-time1 ax-color-ignore ax-padding-top ax-sm "> 2025-04-25</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="ax-slide slide1 ax-bg-ignore">
+                            <a href="info/1099/1094.htm"
+                               title="Congratulations！Yuqing passed the postdoctoral proposal report！">
+                                <img class="dn-picture dp-img1 com-size-all-img com-object-fit-cover ax-fadeIn"
+                                     src="__local/9/C1/18/075A2281935FDC74733D451E625_03D74B65_9B97A.jpeg">
+                                <div class="dn-word ax-xxl text-align-justify">
+                                    <h6>Congratulations！Yuqing passed the postdoctoral proposal report！</h6>
+                                    <div class="dp-intr1 ax-padding-top ax-md overflow-ellipsis-2">On November 7, 2024,
+                                        Ni Yuqing's postdoctoral thesis opening report "Theoretical Simulation of
+                                        Ultrafast Spectroscopy...
+                                    </div>
+                                    <div class="dp-time1 ax-color-ignore ax-padding-top ax-sm "> 2024-11-08</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="ax-slide slide1 ax-bg-ignore">
+                            <a href="info/1099/1092.htm" title="Welcome postdoc Yuqing join our team!">
+                                <img class="dn-picture dp-img1 com-size-all-img com-object-fit-cover ax-fadeIn"
+                                     src="__local/2/8B/B3/AB14271B5FF1EFAE696505996B9_08C3F7CD_4635F.jpg">
+                                <div class="dn-word ax-xxl text-align-justify">
+                                    <h6>Welcome postdoc Yuqing join our team!</h6>
+                                    <div class="dp-intr1 ax-padding-top ax-md overflow-ellipsis-2">On July 9, 2024,
+                                        postdoctoral fellow Ni Yuqing joined our laboratory. Ni Yuqing is from Jinhua,
+                                        Zhejiang, and graduat...
+                                    </div>
+                                    <div class="dp-time1 ax-color-ignore ax-padding-top ax-sm "> 2024-07-10</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="research pd90">
+        <div class="wrap_box">
+
+            <div class="research_l">
+                <h3> Gallery </h3>
+            </div>
+
+
+            <div class="research_r">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <a class="swiper-slide" href="javascript:;">
+                            <div>
+                                <img src="images/home/pics/WechatIMG14161.jpg">
+                            </div>
+                            <p>Professor You Xiao was invited to give a speech at the Shanghai Complex System Ultrafast
+                                Dynamics Conference</p>
+                        </a>
+
+                        <a class="swiper-slide" href="javascript:;">
+                            <div>
+                                <img src="images/64011744894935_.pic.jpg">
+                            </div>
+                            <p>Hiking</p>
+                        </a>
+
+                        <a class="swiper-slide" href="javascript:;">
+                            <div>
+                                <img src="images/13881734940692_.pic_hd.png">
+                            </div>
+                            <p>On the autumn weekend, we went hiking together.</p>
+                        </a>
+
+                        <a class="swiper-slide" href="javascript:;">
+                            <div>
+                                <img src="images/2.jpg">
+                            </div>
+                            <p>Tom from PhaseTech leading a 2DIR training session for the team</p>
+                        </a>
+
+                        <a class="swiper-slide" href="javascript:;">
+                            <div>
+                                <img src="images/1.jpg">
+                            </div>
+                            <p>Tom from PhaseTech leading a 2DIR training session for the team</p>
+                        </a>
+
+
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
+            </div>
+            <script>
+                var mySwiper = new Swiper('.swiper-container', {
+                    autoplay: 5000,//可选选项，自动滑动
+                    loop: true,
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    disableOnInteraction: false
+                })
+            </script>
+        </div>
+    </div>
+
+    <div class="peopleWrap pd90">
+        <div class="wrap_box">
+            <h3 class="title"> Principal Investigator (PI) </h3>
+            <div class="peopleCont">
+                <p class="PI"><img src="__local/E/AD/3C/96524FA8FDEAE4AB14217FE0FDC_0800FF48_6BE1D.png%3Fe=.png"
+                                   width="295" vsbhref="vurl"
+                                   vurl="/_vsl/EAD3C96524FA8FDEAE4AB14217FE0FDC/0800FF48/6BE1D?e=.png" vheight=""
+                                   vwidth="295" orisrc="/__local/E/AD/3C/96524FA8FDEAE4AB14217FE0FDC_0800FF48_6BE1D.png"
+                                   class="img_vsb_content"> <br><strong> Meet Xiao You</strong></p>
+                <p class="PIDesc"> Dr. Xiao You leads the Multidimensional Nanospectroscopy Laboratory at Westlake
+                    University. She earned her Bachelor’s degree in Macromolecular Science and Engineering from <a
+                            href="https://penglab.fudan.edu.cn/"> <strong>Fudan University</strong> </a> (2014) and her
+                    Ph.D. in Materials Science from the <a href="https://sites.google.com/view/atkinlab/home"> <strong>
+                        University of North Carolina at Chapel Hill</strong></a> (2019). Dr. You pursued postdoctoral
+                    research at the <a href="https://baizgroup.org/"><strong>University of Texas at Austin</strong></a>
+                    (2019–2022) and the <a
+                            href="https://www-ssrl.slac.stanford.edu/ssrl/web/research/structural-molecular-biology"><strong>Stanford
+                        Synchrotron Radiation Lightsource</strong></a><strong>(SLAC National Accelerator
+                        Laboratory)</strong>(2022–2023). Her research interests include the formation of macromolecular
+                    biocondensates, nanoscale structural heterogeneity in functional materials, and ultrafast dynamics
+                    in liquid systems. </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://api.map.baidu.com/api?type=webgl&amp;v=1.0&amp;ak=aHNVRsAdWG7B4B0r4GsogtoMDVtT1IxY"></script>
+    <div class="contact_us pd90">
+        <div class="wrap_box">
+            <div id="baiduMap" class="baiduMap"></div>
+            <h3 class="title"> Join Us: </h3>
+            <p> The Multidimensional Nanospectroscopy Laboratory explores the intricate dynamics of complex liquids
+                using cutting-edge techniques and interdisciplinary approaches. Whether you're a student, researcher, or
+                collaborator, we invite you to be part of our journey to push the boundaries of molecular science. </p>
+            <p> We are looking for postdoctoral researchers, graduate students, and research assistants to join our
+                dynamic team. Our lab fosters a culture of innovation, collaboration, and personal growth. For more
+                details, visit our [<a
+                        href="https://www.westlake.edu.cn/Careers/OpenPositions/202412/t20241210_47118.shtml"
+                        target="_blank" title="Website Link" textvalue="Website Link">Link</a>] or contact us directly:
+            </p>
+            <p> Lab assistant: Dan Huang<br>Email: huangdan@westlake.edu.cn </p>
+            <p class="modal enCont">
+                <!-- <div>
+                    If you have any inquiries or are interested in collaborating with us,don&#39;t hesitate to reach out:
+                </div> -->
+                <a href="Contact.htm">Contact Us</a>
+            </p>
+            <p class="modal zhCont">
+                <a href="zh/Contact.htm">联系我们</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            var longlati = [120.042899, 30.339942];
+            var long = longlati[0];
+            var lati = longlati[1];
+            var map = new BMapGL.Map('baiduMap');
+            var point = new BMapGL.Point(long, lati);
+            map.centerAndZoom(point, 18);
+            map.enableScrollWheelZoom(true);// 开启鼠标滚轮缩放
+            var zoomCtrl = new BMapGL.ZoomControl();
+            map.addControl(zoomCtrl); // 添加缩放控件
+            var pt = new BMapGL.Point(long, lati);
+            var marker = new BMapGL.Marker(pt);
+            map.addOverlay(marker);
+        })
+    </script>
+
+</div>
+
+
+<footer>
+    <div class="f_top">
+        <!--
+        <a class="enCont" href='Contact.htm'>Contact Us<img src="/img/left.png" alt="img"></a>
+        <a class="zhCont" href='zh/Contact.htm'>联系我们<img src="/img/left.png" alt="img"></a>
+        --></div>
+    <div class="f_bottom wrap_box flex">
+        <div class="f_b_left">
+            <!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+            <div class="record_info">
+                <p>
+                    <img class="bg" src="__local/A/0A/ED/0EE4FCA99F43AA7C672A88AD793_40BBE6B2_2D08.png%3Fe=.png"
+                         width="" height="60"/><img class="bg"
+                                                    src="__local/B/D4/51/CE9167D112CF12CDE8B18B8DB91_40A3DAE5_E43.png%3Fe=.png"
+                                                    width="133" height="60"/>
+                </p>
+                <p>
+                    <br/>
+                </p>
+
+                <p>
+                    浙ICP备18025489号
+                </p>
+                <p>
+                    浙公安备33010602007514号<br/>
+                </p>
+                <p>
+                    Copyright © Westlake University. All Rights Reserved
+                </p>
+            </div>
+
+        </div>
+        <div class="f_b_right">
+            <div class="collaboration">
+                <h3 class="enCont">
+                    Collaboration and Funding
+                </h3>
+                <h3 class="zhCont">
+                    合作和资助
+                </h3>
+                <p>
+                    <a href="https://synbio-zeng.lab.westlake.edu.cn" target="_blank">Laboratory of Synthetic Biology
+                        and Bioengineering</a>
+                </p>
+                <p>
+                    <a href="https://baizgroup.org" target="_blank">Baiz Group at UT Austin</a>
+                </p>
+                <p>
+                    <a href="https://engineering.westlake.edu.cn" target="_blank">School of Engineering</a>
+                </p>
+            </div>
+
+
+            <div class="contact">
+                <div>
+                    <img src="img/address_icon.png" class="img_vsb_content" vsbhref="vurl" vurl="/img/address_icon.png"
+                         vheight="" vwidth="" orisrc="img/address_icon.png">&nbsp;Address: E3-311 No.600 Dunyu Road,
+                    Hangzhou 310030, Zhejiang Province, China
+                </div>
+                <div>
+                    <img class="img_vsb_content" src="img/email_icon.png" vsbhref="vurl" vurl="/img/email_icon.png"
+                         vheight="" vwidth="" orisrc="img/email_icon.png">Email: youxiao@westlake.edu.cn
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
