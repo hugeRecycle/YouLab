@@ -1,0 +1,497 @@
+/* 移动端适配样式 */
+
+/* 防止菜单打开时页面滚动 */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* 汉堡菜单按钮 */
+.mobile-menu-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* 汉堡菜单动画 */
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* 移动端菜单覆盖层样式 - 使用原有menu结构 */
+
+/* 在小屏设备上总是显示汉堡按钮 */
+@media screen and (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+}
+
+/* 平板设备媒体查询 */
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+}
+
+/* 移动端响应式布局 */
+@media screen and (max-width: 768px) {
+    body {
+        min-width: auto;
+        font-size: 14px;
+    }
+
+    .wrap_box {
+        width: 95%;
+        min-width: auto;
+        max-width: none;
+        padding: 0 15px;
+    }
+
+    /* 原有菜单在移动端显示为覆盖层 */
+    menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    menu.mobile-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    menu > ul {
+        background: transparent;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        transform: scale(0.9);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    menu.mobile-active > ul {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    menu .menu li {
+        margin: 20px 0;
+        display: block;
+        width: auto;
+    }
+
+    menu .menu li a {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 15px 30px;
+        display: block;
+        text-align: center;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    menu .menu li a:hover,
+    menu .menu li a.active {
+        background: rgba(255, 255, 255, 0.1);
+        color: #f18b1c;
+    }
+
+    /* 隐藏桌面端菜单的下拉列表 */
+    menu .menu li .list {
+        display: none;
+    }
+
+    /* 头部适配 */
+    header {
+        height: auto;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    header .wrap_box {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .h-center {
+        position: static;
+        padding: 5px 0;
+        font-size: 12px;
+        opacity: 0.8;
+        text-shadow: none;
+        order: 1;
+    }
+
+    .h-left {
+        float: none;
+        margin: 10px 0;
+        order: 2;
+    }
+
+    .h-right {
+        width: auto;
+        float: none;
+        margin: 5px 0;
+        order: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .h-right .group {
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .h-right .lang {
+        margin-top: 0;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+
+    /* 内容区域适配 */
+    .pd90 {
+        padding: 45px 0;
+    }
+
+    /* 标题适配 */
+    .title, .welcome h3, .research_l h3, .newsTop h3, .researchList h3 {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Welcome区域适配 */
+    .welcome .content_box {
+        flex-direction: column;
+    }
+
+    .welcome .content_l {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .welcome .content_r {
+        width: 100%;
+    }
+
+    .welcome .mission_box img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .welcome .mission_box h6 {
+        font-size: 18px;
+        margin: 15px 0 10px;
+    }
+
+    .welcome .mission_box p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .welcome .message_box p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 20px;
+    }
+
+    .picsBox {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* News区域适配 */
+    .newsList ul {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .newsList ul li {
+        margin: 0 0 20px 0;
+    }
+
+    .newsList img.dn-picture {
+        height: 200px;
+    }
+
+    .newsList .dn-word {
+        padding: 15px;
+    }
+
+    .newsList .dn-word h6 {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .newsList .dp-intr1 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Research区域适配 */
+    .research .wrap_box {
+        flex-direction: column;
+    }
+
+    .research .research_l {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .research .research_r {
+        width: 100%;
+    }
+
+    .research_r .swiper-slide div {
+        height: 250px;
+    }
+
+    .swiper-slide p {
+        font-size: 14px;
+        padding: 15px;
+        line-height: 1.5;
+    }
+
+    /* People区域适配 */
+    .peopleCont {
+        padding: 20px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .peopleCont .PI {
+        float: none;
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .peopleCont .PI img {
+        width: 200px;
+        max-width: 100%;
+    }
+
+    .peopleCont .PIDesc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Contact区域适配 */
+    .contact_us p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .baiduMap {
+        width: 100%;
+        height: 250px;
+        float: none;
+        margin: 20px 0;
+    }
+
+    .contact_us .modal a {
+        font-size: 16px;
+        padding: 12px 30px;
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    /* Footer适配 */
+    .f_bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .f_b_left, .f_b_right {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .f_b_left img {
+        height: 40px;
+        margin: 5px;
+    }
+
+    .record_info p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .collaboration h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .collaboration p {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .f_b_right .contact {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .f_b_right .contact div {
+        margin: 10px 0;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .f_b_right .contact img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        margin-top: 2px;
+    }
+}
+
+/* 超小屏幕适配 */
+@media screen and (max-width: 480px) {
+    .wrap_box {
+        padding: 0 10px;
+    }
+
+    .title, .welcome h3, .research_l h3, .newsTop h3, .researchList h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    menu .menu li a {
+        font-size: 20px !important;
+        padding: 12px 20px !important;
+    }
+
+
+    .welcome .mission_box p,
+    .welcome .message_box p {
+        font-size: 13px;
+    }
+
+    .peopleCont {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .peopleCont .PI img {
+        width: 150px;
+    }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+    menu .menu li a {
+        padding: 18px 35px !important;
+        font-size: 22px !important;
+    }
+    
+    menu .menu li a:active {
+        background: rgba(255, 255, 255, 0.2) !important;
+        transform: scale(0.98);
+    }
+    
+    .contact_us .modal a:active {
+        transform: scale(0.98);
+    }
+}
+
+/* 横屏模式优化 */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .banner {
+        height: 80vh;
+        min-height: 300px;
+    }
+    
+    .banner video {
+        height: 80vh;
+        min-height: 300px;
+    }
+    
+    menu > ul {
+        transform: scale(0.8) !important;
+    }
+    
+    menu.mobile-active > ul {
+        transform: scale(0.9) !important;
+    }
+    
+    menu .menu li {
+        margin: 15px 0 !important;
+    }
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 高分辨率屏幕优化 */
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    .logo img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+} 

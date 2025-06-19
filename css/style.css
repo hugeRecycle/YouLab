@@ -381,7 +381,6 @@ width:100%;
 .banner {
   position: relative;
   width: 100%;
-  min-width: 1000px;
 }
 .banner img {
   width: 100%;
