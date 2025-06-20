@@ -387,7 +387,7 @@ body.menu-open {
     }
 
     .h-right .group {
-        height: 26px;
+        height: 30px;
         transition: height 0.3s ease;
     }
 
@@ -708,6 +708,10 @@ body.menu-open {
         margin: 5px;
     }
 
+    .f_b_right{
+        padding-top:0
+    }
+
     .record_info p {
         font-size: 12px;
         line-height: 1.4;
@@ -720,12 +724,13 @@ body.menu-open {
 
     .collaboration p {
         font-size: 14px;
-        margin: 8px 0;
+        margin: 4px 0;
     }
 
     .f_b_right .contact {
         font-size: 14px;
         line-height: 1.5;
+        margin-top:20px
     }
 
     .f_b_right .contact div {
@@ -760,9 +765,7 @@ body.menu-open {
         line-height: 1.2;
     }
 
-    header .wrap_box {
-        padding: 10px 12px;
-    }
+  
 
     .logo {
         height: 32px;
@@ -782,9 +785,7 @@ body.menu-open {
         gap: 8px;
     }
 
-    .h-right .group {
-        height: 22px;
-    }
+   
 
     .h-right .lang {
         font-size: 12px;
