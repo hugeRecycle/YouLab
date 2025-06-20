@@ -142,6 +142,122 @@
         border-radius: 0;
         background: none;
     }
+    
+    /* 确保PC端新闻样式正确 */
+    .newsList {
+        border-radius: 16px;
+        padding: 30px 25px;
+        margin: 40px 0;
+    }
+    
+    .newsList ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .newsList ul li {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        padding: 0;
+        margin: 0;
+    }
+    
+    .newsList ul li:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(0, 73, 143, 0.1);
+    }
+    
+    .newsTop {
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 25px;
+        border-bottom: 3px solid #f0f2f5;
+    }
+    
+    .newsTop h3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .newsTop a {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 140px;
+        height: 48px;
+        line-height: 1;
+        background: linear-gradient(135deg, #00498f 0%, #0067cc 100%);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 25px;
+        box-shadow: 0 4px 12px rgba(0, 73, 143, 0.3);
+        transition: all 0.3s ease;
+        padding: 0 24px;
+    }
+    
+    .newsTop a:hover {
+        background: linear-gradient(135deg, #0067cc 0%, #0082ff 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 73, 143, 0.4);
+    }
+}
+
+/* 大屏幕优化 */
+@media screen and (min-width: 1200px) {
+    .newsList ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+    
+    .newsList {
+        padding: 40px 35px;
+    }
+    
+    .newsTop {
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+    }
+    
+    .newsTop h3 {
+        margin-bottom: 25px;
+    }
+    
+    .newsTop p {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    .newsList img.dn-picture {
+        height: 260px;
+    }
+    
+    .newsList .dn-word {
+        padding: 28px;
+    }
+    
+    .newsList .dn-word h6 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .newsList .dp-intr1 {
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
 }
 
 /* 防止菜单打开时页面滚动 */
@@ -471,7 +587,6 @@ body.menu-open {
 
     /* News区域适配 */
     .newsList {
-        background: #f8f9fa;
         border-radius: 12px;
         padding: 0 !important;
         margin: 20px 0;

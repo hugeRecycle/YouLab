@@ -2722,7 +2722,7 @@ textarea::placeholder {
   padding-top: 1rem;
 }
 .ax-padding-top.ax-md {
-  padding-top: 1.4rem;
+  /* padding-top: 1.4rem; */
 }
 .ax-padding-top.ax-lg {
   padding-top: 1.8rem;
@@ -18707,7 +18707,6 @@ textarea.ax-check-question:focus {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  overflow: hidden;
   list-style: none;
   padding: 0;
   z-index: 2;
