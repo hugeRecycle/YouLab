@@ -854,7 +854,6 @@ sub {
     display: none;
   }
 .dn-lower .swiper1 .slide1:not(:nth-of-type(5n+1)):not(:nth-of-type(5n+2)) .dp-intr1 {
-  display: none;
   }
  .dn-lower .swiper1 .slide1:not(:nth-of-type(5n+1)):not(:nth-of-type(5n+2)) .dn-word .dp-more1 {
     display: none;
