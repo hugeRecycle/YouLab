@@ -32,11 +32,10 @@
 </div>
 <div class="h-right">
      <img id="group" class="group" src="../../img/group.png" height="50" style="text-wrap: wrap;" />
-     <a class="lang" id="langBtn" href="javascript:;">中文</a>
+     <a class="lang" id="langBtn" href="javascript:;" aria-label="Switch language"><span class="lang__item lang__item--zh">中</span><span class="lang__divider">/</span><span class="lang__item lang__item--en">En</span></a>
 </div>
 <script>
 var langBtn = document.getElementById("langBtn");
-langBtn.innerHTML = isZh ? "EN" : "中文";
 langBtn.onclick = function(){
     var path = location.pathname.split("zh").pop();
     location.href = isZh ? path : "/zh"+path;

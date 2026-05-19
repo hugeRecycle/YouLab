@@ -235,17 +235,50 @@ header .h-left {
   top: 40px;
   position: relative;
   float: right;
+  height: 55px;
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
 }
 
 .h-right .lang {
-  padding-left: 20px;
-  margin-top: 5px;
-  margin-left: 10px;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 12px;
-  background: url(../img/language.png) 0 0 no-repeat;
-  background-size: contain;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  color: #c8c8c8;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.h-right .group {
+  display: block;
+  width: auto;
+  height: 50px;
+}
+
+.h-right .lang__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+}
+
+.h-right .lang__divider {
+  color: #c8c8c8;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.zhBody .h-right .lang__item--zh,
+.enBody .h-right .lang__item--en {
+  min-width: 28px;
+  border-radius: 14px;
+  background: #f47b20;
+  color: #fff;
 }
 
 .h-center {
@@ -320,6 +353,22 @@ footer {
   font-size: 20px;
   font-weight: 600;
   margin: 20px 0;
+}
+
+.collaboration {
+  position: relative;
+  min-height: 120px;
+  padding-right: 170px;
+}
+
+.collaboration::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 137px;
+  width: 140px;
+  height: 140px;
+  background: url("../img/nsfc.png") center / contain no-repeat;
 }
 
 .collaboration a {
@@ -444,7 +493,7 @@ menu > ul {
 
 .menu .list a {
   font-family: PingFang SC;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 26px;
   letter-spacing: 0px;
@@ -607,7 +656,7 @@ menu > ul {
 }
 
 .baiduMap {
-  width: 200px;
+  width: 100px;
   height: 400px;
   float: right;
   margin: 30px 0 0 20px;
@@ -758,7 +807,7 @@ menu > ul {
   background-size: cover;
   color: #fff;
   overflow: hidden;
-  padding: 90px 50px;
+  padding: 60px 50px;
 }
 
 .contact_us .title,
