@@ -1591,6 +1591,10 @@ menu > ul {
   margin-top: 15px;
 }
 
+.research_detail .v_news_content {
+  padding-top: 20px;
+}
+
 .research_detail dt {
   padding: 30px 0 20px 0;
 }

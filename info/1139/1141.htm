@@ -1,16 +1,28 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>二维红外光谱-You Lab·Spatiotemporal Spectroscopic Imaging</title><META Name="keywords" Content="You Lab, molecular dynamics, biological function,二维,红外光,红外,光谱" />
-<META Name="description" Content="1. 二维红外光谱的起源与发展      在分子世界中，化学键并非静止不动的“连杆”，而像无数微小的“弹簧”，不断地伸缩、弯曲和摆动。这些振动不仅决定分子的结构稳定性，也影响着能量在分子内部和分子之间的传递方式。红外光谱是研究分子结构最常用的工具之一。它通过测量分子中化学键的振动频率，帮助我们判断键的种类和分子的局部环境。在一维红外光谱（FTIR）中，每一个吸收峰对应一种振动模式，峰的位置和形状反映了化学键..." />
+<META Name="description" Content="从振动频率到分子动力学：飞秒光谱如何测量分子运动。二维红外光谱（2D IR）通过飞秒激光脉冲序列追踪振动响应随时间的演化，揭示振动耦合、谱扩散、氢键动力学、溶剂化过程和复杂生物体系中的分子涨落。" />
 
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../../css/iconfont.css" />
-    <style>#langBtn{visibility:hidden;}</style>
+    <style>
+        #langBtn{visibility:hidden;}
+        .concept-callout{
+            margin: 18px 0;
+            padding: 12px 16px;
+            border-left: 3px solid #24477a;
+            background: #f1f4f8;
+            color: #263f65;
+            font-style: italic;
+            line-height: 2;
+            letter-spacing: 0;
+        }
+    </style>
 </head>
 <script>var isZh = location.href.includes("zh");  isZh = location.href.includes("info/1139");  </script>
 <body>
@@ -150,155 +162,91 @@ document.body.className = isZh ? "zhBody" : "enBody";
 
   <div class="content_box" id="vsb_content">
            <p><div class="v_news_content">
-<p><br></p>
-<h1><p class="vsbcontent_start"><span style="font-size: 18px;">1. 二维红外光谱的起源与发展</span></p></h1>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 在分子世界中，化学键并非静止不动的“连杆”，而像无数微小的“弹簧”，不断地伸缩、弯曲和摆动。这些振动不仅决定分子的结构稳定性，也影响着能量在分子内部和分子之间的传递方式。红外光谱是研究分子结构最常用的工具之一。它通过测量分子中化学键的振动频率，帮助我们判断键的种类和分子的局部环境。在一维红外光谱（FTIR）中，每一个吸收峰对应一种振动模式，峰的位置和形状反映了化学键的强弱与分布<sup style="text-wrap-mode: wrap"><span lang="EN-US" style="font-size: 16px;line-height: 24px;font-family: 'times new roman', serif"><sup style="text-wrap-mode: wrap"><span lang="EN-US" style="font-size: 16px;line-height: 24px;font-family: 'times new roman', serif">[1]</span></sup></span></sup>。借助这些信息，化学家能够像阅读“指纹”一样识别不同的分子。然而，一维光谱只能记录分子在某一时刻的平均响应，无法揭示不同振动模式之间的相互关系。例如，在蛋白质折叠过程中，不同肽段的振动协同变化，或在溶液中，氢键不断形成与断裂，这些动态过程在传统光谱中都被“平均化”了，难以直接观察。</span></p>
-<p><br></p>
-<p style="text-align: center;"><img src="../../local/8/C5/4B/8C6D32C26C5D600BFD85AA8E099_E5F37498_199E3B.gif" vsbhref="vurl" vurl="/_vsl/8C54B8C6D32C26C5D600BFD85AA8E099/E5F37498/199E3B" vheight=" 193px" vwidth=" 350px" width="350" height="193" border="0" vspace="0" hspace="0" title="" alt="" orisrc="/local/8/C5/4B/8C6D32C26C5D600BFD85AA8E099_E5F37498_199E3B.gif" class="img_vsb_content" style="width: 350px; height: 193px;">&nbsp;<img src="../../local/5/30/02/957D582B6AB09BAF4CA6D55514B_50B017A6_E9838.gif" vsbhref="vurl" vurl="/_vsl/53002957D582B6AB09BAF4CA6D55514B/50B017A6/E9838" vheight=" 193px" vwidth=" 350px" width="350" height="193" border="0" vspace="0" hspace="0" title="" alt="" orisrc="/local/5/30/02/957D582B6AB09BAF4CA6D55514B_50B017A6_E9838.gif" class="img_vsb_content" style="width: 350px; height: 193px;"></p>
-<p style="text-align: center;"><img src="../../local/6/B5/8E/45169491F2F872007544BD05553_25FE9577_4E2FC.png" vsbhref="vurl" vurl="/_vsl/6B58E45169491F2F872007544BD05553/25FE9577/4E2FC" vheight=" 295px" vwidth=" 600px" width="600" height="295" border="0" vspace="0" hspace="0" title="" alt="" orisrc="/local/6/B5/8E/45169491F2F872007544BD05553_25FE9577_4E2FC.png" class="img_vsb_content" style="width: 600px; height: 295px;"></p>
-<p style="text-align: center"><strong><span style="font-size: 14px;">图1-1</span></strong><span style="font-size: 14px;">（A）C=O伸缩振动分子模拟&nbsp; （B）C≡N伸缩振动分子模拟 （C）C=O伸缩振动傅里叶红外光谱 和 C≡N伸缩振动傅里叶红外光谱</span></p>
-<p style="text-align: left;"><br></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 二维红外光谱（Two-Dimensional Infrared Spectroscopy, 2DIR）正是在这样的需求中诞生的。它在实验上结合<strong>时间分辨</strong>与<strong>频率分辨</strong>的概念，通过超快激光脉冲在两个频率维度上同时探测分子的响应，从而揭示不同振动模式之间的耦合与能量转移关系<sup>[2]</sup>。其思想最初来源于二维核磁共振（2D NMR），2D NMR通过在两个频率维度上分析信号，使科学家能够看清原子核之间的相互作用，从而揭示蛋白质等复杂分子的三维结构。同样地，2DIR从“一维”到“二维”的发展，意味着我们不再只看到分子的单个振动，而能看到振动之间的联系——它们如何协同、如何转移能量、又如何随着时间演化。</span></p>
-<p><span style="font-size: 16px;">随着超快激光技术的成熟，20世纪90年代，双色红外泵浦-探测技术率先突破，为二维红外光谱的理论构想搭建了实验基础；2000年，科学家终于完成首次真正意义上的二维红外实验，成功拍出第一帧分子振动的“动态图像”，尽管当时谱图的频率分辨率仍有不足；直至2003年，可生成真实吸收谱图的二维红外技术正式问世，为分子动力学研究打开了新的窗口。</span></p>
-<p class="vsbcontent_img" style="text-align: center;"><br></p>
-<p class="vsbcontent_img"><span style="font-size: 12px;"></span></p>
-<h1 style="text-wrap-mode: wrap;"><p><span style="font-size: 18px;">2. 二维红外光谱的工作原理</span></p></h1>
-<p><span style="font-size: 16px;"><strong>2.1 泵浦-探测机制</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 在典型的2DIR实验中，样品受到一系列时间间隔可控的超快红外脉冲作用。泵浦光脉冲首先选择性激发分子中特定的振动模式，使其从基态跃迁至激发态；随后，探测光脉冲在精确控制的时间延迟下测量分子在激发态下的响应，包括振动模式之间的耦合、能量转移以及与周围环境的相互作用。</span></p>
-<p><span style="font-size: 16px;">泵浦-探测（Pump-Probe）模式是最常用的2DIR实验方式之一，实验使用<strong>两个相互独立但相干的泵浦脉冲</strong>与<strong>一个探测脉冲</strong>记录样品响应并解析分子动力学过程。具体而言：第一个泵浦脉冲选择性激发目标振动，第二个泵浦脉冲在时间延迟<span style="font-size: 16px; font-family: &quot;times new roman&quot;;"><strong style="font-size: medium;text-wrap-mode: wrap"><span lang="EN-US" style="font-size: 16px;line-height: 24px;font-family: 'times new roman', serif">t<sub>1</sub></span></strong></span>后到达，进一步调制分子相干与耦合状态；此后，探测脉冲在与泵浦对之间的时间延迟<strong style="font-size: medium;text-wrap-mode: wrap"><span lang="EN-US" style="font-size: 16px;line-height: 24px;font-family: 'times new roman', serif">t<sub>2</sub></span></strong>作用于样品，记录分子从激发态的演化与跃迁过程。该三脉冲方案能够捕捉瞬态状态，并揭示振动模式间的能量转移与耦合信息。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; · <strong>泵浦脉冲</strong>选择性激发特定的振动模式，使分子从基态跃迁至激发态；</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; · <strong>探测脉冲</strong>在不同时间延迟下记录分子的相干响应，从而获得振动模式间的耦合信息。</span></p>
-<p style="text-wrap-mode: wrap;"><br></p>
-<p class="vsbcontent_img" style="text-wrap-mode: wrap; text-align: center;"><img src="../../local/9/0F/73/BAA3148A65629DE8DE62565C76C_DF120BA7_23231.png" xmlns:v="urn:schemas-microsoft-com:vml" width="600" height="212" vsbhref="vurl" vurl="/_vsl/90F73BAA3148A65629DE8DE62565C76C/DF120BA7/23231" vheight=" 212px" vwidth=" 600px" border="0" vspace="0" hspace="0" title="" alt="" orisrc="/local/9/0F/73/BAA3148A65629DE8DE62565C76C_DF120BA7_23231.png" class="img_vsb_content" style="width: 600px; height: 212px;"></p>
-<p style="text-wrap-mode: wrap; text-align: center;"><strong><span style="font-size: 14px;">图2-1</span></strong><span style="font-size: 14px;"> 2DIR的基本原理</span></p>
-<p style="text-align: left;"><span style="font-size: 16px;"><strong><br></strong></span></p>
-<p style="text-align: left;"><span style="font-size: 16px;"><strong>2.2 二维红外的谱图特征与解析</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 实验结果通常以<strong>二维等高线图</strong>或<strong>伪彩色图</strong>形式呈现（图2-2）：横轴表示激发频率，纵轴表示探测频率，信号强度通过伪彩色或等高线显示。在2DIR谱图中：</span></p>
-<p><br><img src="../../local/6/B4/69/7AEF58CF4506C475227E9651AB6_C59ECCD0_15A2B.png" xmlns:v="urn:schemas-microsoft-com:vml" width="260" height="230" vsbhref="vurl" vurl="/_vsl/6B4697AEF58CF4506C475227E9651AB6/C59ECCD0/15A2B" vheight=" 230px" vwidth=" 260px" border="0" vspace="0" hspace="0" title="" alt="" orisrc="/local/6/B4/69/7AEF58CF4506C475227E9651AB6_C59ECCD0_15A2B.png" class="img_vsb_content" style="float: left; width: 260px; height: 230px;"><span style="font-family: symbol; font-size: 13px;"><br></span></p>
-<p><span style="font-family: symbol; font-size: 13px;"><br></span></p>
-<p><span style="font-family: 宋体, SimSun; font-size: 16px;"><span style="font-family: 宋体, SimSun;">&nbsp;&nbsp;</span></span></p>
-<p><span style="font-family: 宋体, SimSun; font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp;· </span><strong style="font-family: 宋体, SimSun; font-size: 16px;">对角峰（Diagonal Peaks）</strong><span style="font-family: 宋体, SimSun; font-size: 16px;"> 对应分子自身振动模式，与一维红外吸收峰一致；</span></p>
-<p><span style="font-family: 宋体, SimSun; font-size: 16px;"><br></span></p>
-<p><strong style="font-family: 宋体, SimSun; font-size: 16px;"><span style="font-family: 宋体, SimSun; font-size: 16px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp;· </span>交叉峰（Cross Peaks）</strong><span style="font-family:宋体, SimSun"><span style="font-size: 16px;"> 是二维红外特有信号，交叉峰的出现与强度可以揭示化学键之间的空间关联，例如两个振动模&nbsp; &nbsp; &nbsp; &nbsp;式是否共享部分原子，或通过氢键、范德华力等作用连接。</span></span></p>
-<p style="text-wrap-mode: wrap; text-align: center;"><span style="font-size: 12px;"><br></span></p>
-<p style="text-wrap-mode: wrap;"><br></p>
-<p style="text-wrap-mode: wrap;"><strong style="text-align: center;">图2-2 </strong><span style="text-align: center;">二维红外光谱中的交叉峰的示意图：</span></p>
-<p style="text-wrap-mode: wrap;"><span style="text-align: center;">当</span><span style="text-align: center;">两个振动模式存在相互作用时，交叉峰</span></p>
-<p style="text-wrap-mode: wrap;"><span style="text-align: center;">会在二</span><span style="text-align: center;">维光谱中显现，峰位置和强度可以</span></p>
-<p style="text-wrap-mode: wrap;"><span style="text-align: center;">揭示分子内</span><span style="text-align: center;">部不同振动模式之间的耦合程</span></p>
-<p style="text-wrap-mode: wrap;"><span style="text-align: center;">度</span></p>
-<h1><p><span style="font-size: 18px;">3. 二维红外光谱的优势与应用</span></p></h1>
-<p><br></p>
-<p class="vsbcontent_img" style="text-wrap-mode: wrap; text-align: center;"><img src="../../local/2/2B/8F/DAF7679FAD63399041B73DC1DDA_5B8DA3DB_24523.png" xmlns:v="urn:schemas-microsoft-com:vml" width="300" height="307" vsbhref="vurl" vurl="/_vsl/22B8FDAF7679FAD63399041B73DC1DDA/5B8DA3DB/24523" vheight=" 307px" vwidth=" 300px" border="0" vspace="0" hspace="0" title="" alt="" orisrc="/local/2/2B/8F/DAF7679FAD63399041B73DC1DDA_5B8DA3DB_24523.png" class="img_vsb_content" style="width: 300px; height: 307px;"></p>
-<p class="vsbcontent_img" style="text-wrap-mode: wrap; text-align: center;"><strong><span style="font-size: 14px;">图3-1</span></strong><span style="font-size: 14px;"> 在不同等待时间延迟下，水、葡萄糖和PEG 1500溶液中C≡N伸缩振动模式的二维红外光谱示例<sup><span lang="EN-US" style="font-size: 14px; line-height: 24px; font-family: &quot;times new roman&quot;, serif;">[3]</span></sup></span></p>
-<p><span style="font-size: 16px;"><strong><br></strong></span></p>
-<p><span style="font-size: 16px;"><strong>3.1 二维红外光谱的优势</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp;2DIR的核心优势体现在三个方面：</span></p>
-<p><span style="font-size: 16px;">（1）揭示振动模式的耦合关系：交叉峰的存在与特征，能够定量反映不同振动模式之间的耦合强度，这种耦合可能源于原子的共享、化学键的共轭效应，或是分子间的化学相互作用，为理解分子的空间结构与电子效应提供了深层依据。</span></p>
-<p><span style="font-size: 16px;">（2）捕捉超快分子动力学过程：凭借飞秒至皮秒级的时间分辨能力，2DIR能够实时追踪分子体系中的动态变化，如氢键网络的形成与断裂、蛋白质二级结构的折叠与解折叠、溶剂分子的重新排列等超快过程，为研究化学反应机理和生物分子功能提供了动态展现。</span></p>
-<p><span style="font-size: 16px;">（3）区分均匀展宽与非均匀展宽：通过对谱峰线型的分析，2DIR能够量化两种展宽机制的贡献——均匀展宽由分子的动态过程（如振动弛豫、与溶剂的能量交换）引起，反映分子运动的时间尺度；非均匀展宽则源于分子所处微观环境的静态差异（如不同的溶剂化状态、构象多样性），揭示环境的空间分布特征。这种区分能力，使研究者能够更精准地解析分子所处的微观环境及其动态变化规律。</span></p>
-<p><span style="font-size: 12px;"><br></span></p>
-<p style="text-align: left;"><span style="font-size: 16px;"><strong>3.2 二维红外光谱的应用领域</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 2DIR凭借其“频率分辨+时间分辨”的双重优势，已成为解析分子结构、追踪动态过程的核心工具，在化学、生物学、材料科学等领域展现出不可替代的应用价值。</span></p>
-<p><span style="font-size: 16px;"><strong>3.2.1. 分子结构解析</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 2DIR通过分析振动耦合信号（交叉峰），能够精确揭示分子的空间构型和相互作用，尤其适用于复杂体系。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 蛋白质二级结构鉴定：蛋白质的酰胺I带振动（1600–1700 cm⁻¹）富含二级结构信息。2DIR可以区分不同二级结构：α-螺旋因相邻肽键的空间接近而产生沿对角线分布的强交叉峰；而β-折叠的肽键振动耦合方向则垂直于对角线，且交叉峰强度更高。通过分析这些交叉峰，可以定量测定蛋白质中α-螺旋、β-折叠和无规卷曲的比例，甚至追踪蛋白质在变性或折叠过程中的动态变化。</span></p>
-<p><span style="font-size: 16px;">超分子组装体结构研究：在超分子组装体中，客体分子的振动模式与主体分子的振动会产生交叉峰。例如，在环糊精-客体分子包合物中，客体分子（如苯环）的振动与环糊精的羟基振动会产生交叉峰，其强度与包合常数正相关，可用于表征超分子相互作用的强度和位点。</span></p>
-<p><span style="font-size: 16px;">聚合物链构象分析：通过分析聚合物振动的2DIR谱，可以研究分子链的取向度。例如，在聚乙烯的CH<sub>2</sub>弯曲振动中，结晶区的分子链排列规整，交叉峰集中；而非晶区的链段无序，交叉峰弥散。这为理解聚合物的熔融和结晶过程提供了分子层面的证据。</span></p>
-<p><span style="font-size: 16px;"><strong>3.2.2. 化学交换</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 2DIR的飞秒时间分辨能力使其能直接捕捉皮秒至纳秒级的化学交换过程，从而揭示反应的动态机制。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 氢键网络动态：通过追踪水分子中O-H伸缩振动的2DIR谱，可以研究氢键的动态。在纯水中，氢键的平均寿命约为1-2皮秒。当水与乙醇混合时，乙醇的羟基与水分子形成更强的氢键，导致交叉峰的衰减速率变慢，表明氢键寿命延长。通过拟合交叉峰的强度变化，可以定量计算氢键的形成与断裂速率常数。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 质子转移反应：在甲酸二聚体中，质子在两个氧原子间的快速转移会导致O-H振动频率的周期性变化。在2DIR谱中，这种动态过程表现为交叉峰的周期性强度波动，其周期与质子转移的时间尺度一致，为研究质子转移的隧道效应提供了直接证据。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 分子异构化动力学：2DIR可用于研究生物分子的快速反应。例如，在视黄醛的光诱导异构化过程中，通过观察C=C伸缩振动的2DIR信号，可以确定异构化反应的时间常数，从而深入了解视觉过程的关键步骤。</span></p>
-<p><span style="font-size: 16px;"><strong>3.2.3. 分子间弱相互作用</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 2DIR通过光谱扩散现象和频率-频率相关函数（FFCF），为分子间弱相互作用（如范德华力、疏水作用）的研究提供了定量手段：</span></p>
-<p><span style="font-size: 16px;">溶剂化动力学：当溶质分子溶解于不同溶剂时，其振动的FFCF衰减特征会反映溶剂化的动态过程。例如，在非极性溶剂中，FFCF主要由溶剂分子的转动扩散引起，衰减时间较长；而在极性溶剂中，FFCF会因静电相互作用而快速衰减，随后因氢键网络的重排出现缓慢衰减，这为理解“疏水水合”效应提供了动态视角。</span></p>
-<p><span style="font-size: 16px;">离子-溶剂相互作用：在NaCl水溶液中，2DIR分析显示，氯离子的第一溶剂化层中水分子的停留时间远长于本体水中的氢键寿命，这表明离子与溶剂间存在强烈的相互作用。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 蛋白质活性中心微环境：肌红蛋白中血红素的Fe-CO伸缩振动对周围氨基酸残基的电场敏感。2DIR的光谱扩散分析显示，活性中心的FFCF衰减缓慢，表明微环境具有较高的刚性。当蛋白质变性后，FFCF衰减加快，反映了活性中心动态性的增强。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 这些应用充分证明，2DIR不仅是一种光谱技术，更是连接分子结构与宏观性质的“桥梁”，为深入理解复杂体系的微观机制提供了前所未有的洞察力。</span></p>
-<p><br></p>
-<h1><p><span style="font-size: 18px;">4.二维红外的理论基础简述</span></p></h1>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 二维红外光谱的理论核心建立在分子振动与光场的相互作用基础上，通过超快激光脉冲和非线性光学过程揭示分子内部的动力学行为<span style="font-family: &quot;times new roman&quot;; font-size: 14px;"><sup>[4]</sup></span>。</span></p>
-<p><span style="font-size: 12px;"><br></span></p>
-<p><span style="font-size: 16px;"><strong>4.1 线型分析与频率-频率相关函数（FFCF）</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 在2DIR光谱中，对角峰的线型包含了关于分子微环境和动力学过程的重要信息。<strong>线型分析</strong>是解析二维红外光谱（2DIR）中峰形变化的关键方法。通过对谱峰形状的研究，可以深入了解分子动力学、环境波动以及均匀与非均匀展宽机制。在实际实验中，2DIR谱图中的峰形通常是均匀和非均匀展宽共同作用的结果，因此线型分析需要综合考虑两种机制。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp;<strong>短时间<span style="font-size: 16px; font-family: &quot;times new roman&quot;;"><em>t<sub>2</sub></em></span></strong>下，谱图峰形主要由非均匀展宽决定，对角峰呈椭圆形。此时，FFCF衰减较慢，表示环境波动较弱或弛豫时间较长。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp;<strong>长时间<span style="font-size: 16px; font-family: &quot;times new roman&quot;;"><em>t<sub>2</sub></em></span></strong>后，由于分子动力学过程逐渐显现，峰形趋于圆形，均匀展宽占主导，FFCF衰减较快，反映分子在环境中快速交换或弛豫。</span></p>
-<p><br></p>
-<p class="vsbcontent_img" style="text-align: center;"><img src="../../local/0/8F/D7/E7BC81BCE3BB26405E1D5A94D8D_B918FEBC_3F380.png" xmlns:v="urn:schemas-microsoft-com:vml" width="500" height="208" vsbhref="vurl" vurl="/_vsl/08FD7E7BC81BCE3BB26405E1D5A94D8D/B918FEBC/3F380" vheight=" 208px" vwidth=" 500px" border="0" vspace="0" hspace="0" title="" alt="" orisrc="/local/0/8F/D7/E7BC81BCE3BB26405E1D5A94D8D_B918FEBC_3F380.png" class="img_vsb_content" style="width: 500px; height: 208px;"></p>
-<p style="text-align: center;"><strong><span style="font-size: 14px;">图4-1 </span></strong><span style="font-size: 14px;">（A）二维红外光谱中的光谱扩散和线型分析示意图，振动探针与溶液环境的能量交换导致泵浦光与探测光频率去相关；（B）中心线斜率随<em>t<sub>2</sub></em>延迟时间呈指数衰减。弛豫时间通常反映振动探针周围局域化学环境的动态变化</span></p>
-<p><span style="font-size: 12px;"><br></span></p>
-<p><span style="font-size: 16px;"><strong>4.2 频率-频率相关函数（FFCF）的提取与拟合：</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp;通过在不同时间延迟下采集数据并对谱图进行线型分析，可以提取频率-频率相关函数（FFCF），描述了分子振动频率随时间的波动程度。</span></p>
-<p style="text-align: center"><img src="../../local/6/F1/B1/1339DBA5DB3EF64CA932F446510_91317066_562D.jpg" width="200" alt="562D" vsbhref="vurl" vurl="/_vsl/6F1B11339DBA5DB3EF64CA932F446510/91317066/562D" vheight=" 48px" vwidth=" 200px" height="48" border="0" vspace="0" hspace="0" title="562D" orisrc="/local/6/F1/B1/1339DBA5DB3EF64CA932F446510_91317066_562D.jpg" class="img_vsb_content" style="width: 200px; height: 48px;"></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp;其中</span><img src="../../local/B/9E/12/3139ED5C3A56041C7DE4DC8832C_951AA115_1D6.png" xmlns:v="urn:schemas-microsoft-com:vml" width="29.110000610351562" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/B9E123139ED5C3A56041C7DE4DC8832C/951AA115/1D6" vheight="31.18000030517578" vwidth="29.110000610351562" orisrc="/local/B/9E/12/3139ED5C3A56041C7DE4DC8832C_951AA115_1D6.png" class="img_vsb_content"><span lang="EN-US" style="text-wrap-mode: wrap;font-size: 16px;line-height: 24px;font-family: 'times new roman', serif"></span><span style="font-size: 16px;">反映振动频率</span><img src="../../local/1/78/F5/0F2319C2E0FABF07CD05C8FF2F6_1D6A8DB5_14A.png" xmlns:v="urn:schemas-microsoft-com:vml" width="20.389999389648438" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/178F50F2319C2E0FABF07CD05C8FF2F6/1D6A8DB5/14A" vheight="31.18000030517578" vwidth="20.389999389648438" orisrc="/local/1/78/F5/0F2319C2E0FABF07CD05C8FF2F6_1D6A8DB5_14A.png" class="img_vsb_content"><span style="font-size: 16px;">偏移随时间的<strong>自相关性</strong>。FFCF通常被拟合为指数衰减形式，以描述分子在环境中的波动：</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
-<p style="text-align: center"><img src="../../local/2/1A/0D/F0BE72497A1A936BFE8136FED3F_4AB283AC_4EDE.jpg" width="200" alt="4EDE" vsbhref="vurl" vurl="/_vsl/21A0DF0BE72497A1A936BFE8136FED3F/4AB283AC/4EDE" vheight=" 45px" vwidth=" 200px" height="45" border="0" vspace="0" hspace="0" title="4EDE" orisrc="/local/2/1A/0D/F0BE72497A1A936BFE8136FED3F_4AB283AC_4EDE.jpg" class="img_vsb_content" style="width: 200px; height: 45px;"></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp;其中Δ表示分子频率的静态分布幅度（即非均匀展宽的大小）;&nbsp;</span><img src="../../local/2/90/3B/D55E7B3E1D77B1FFA1A447D3B42_0F13E676_11E.png" xmlns:v="urn:schemas-microsoft-com:vml" width="29" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/2903BD55E7B3E1D77B1FFA1A447D3B42/0F13E676/11E" vheight="31.18000030517578" vwidth="29" vspace="0" hspace="0" border="0" alt="11E" orisrc="/local/2/90/3B/D55E7B3E1D77B1FFA1A447D3B42_0F13E676_11E.png" class="img_vsb_content" style="text-align: center;"><span style="font-size: 16px;">代表关联时间（Correlation Time），反映分子频率波动的时间尺度。在复杂体系中，FFCF可能需要使用双指数或多项拟合形式，描述多种时间尺度上的弛豫过程：</span></p>
-<p><br></p>
-<p style="text-align: center"><img src="../../local/3/9F/E5/A61A02E61F6C3333B7ED639014C_3F7A8260_65AB.jpg" width="280" alt="65AB" vsbhref="vurl" vurl="/_vsl/39FE5A61A02E61F6C3333B7ED639014C/3F7A8260/65AB" vheight=" 50px" vwidth=" 280px" height="50" border="0" vspace="0" hspace="0" title="65AB" orisrc="/local/3/9F/E5/A61A02E61F6C3333B7ED639014C_3F7A8260_65AB.jpg" class="img_vsb_content" style="width: 280px; height: 50px;"></p>
-<p><br></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp;这种模型能够解析快速溶剂化过程和慢速分子构象变化等多层次的分子动力学行为。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; &nbsp;CLS的衰减速率与FFCF紧密相关，描述了分子环境如何在时间尺度上波动。</span></p>
-<p><span style="font-size: 16px;"><strong>线型分析方法：</strong></span></p>
-<p><span style="font-size: 16px;"><strong>&nbsp; &nbsp; &nbsp; 中心线斜率（CLS, Center Line Slope）</strong>是最常用的线型分析方法之一，它通过跟踪对角峰的形状变化，直接反映光谱扩散（Spectral Diffusion）过程。CLS的时间衰减可以与FFCF直接关联，从而提取分子的去相干时间和环境波动特征。</span></p>
-<p><span style="font-size: 16px;"><strong>CLS计算的具体步骤：</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 1.提取谱峰位置: 在每个等待时间<span style="font-size: 16px; font-family: &quot;times new roman&quot;;">&nbsp;<em>t<sub>2&nbsp;</sub></em></span>下，沿二维红外光谱的对角线（</span><img src="../../local/5/42/0B/275F4BA20D766383B192AD590A1_D4AC0F20_18C.png" xmlns:v="urn:schemas-microsoft-com:vml" width="68" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/5420B275F4BA20D766383B192AD590A1/D4AC0F20/18C" vheight="31.18000030517578" vwidth="68" vspace="0" hspace="0" border="0" alt="18C" orisrc="/local/5/42/0B/275F4BA20D766383B192AD590A1_D4AC0F20_18C.png" class="img_vsb_content" style="text-align: center;"><span style="font-size: 16px;">&nbsp;）方向，测量在不同泵浦频率</span><img src="../../local/6/31/D5/3C6B30D6CA99BCD2B376AA31DDE_EFDD529C_140.png" xmlns:v="urn:schemas-microsoft-com:vml" width="29" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/631D53C6B30D6CA99BCD2B376AA31DDE/EFDD529C/140" vheight="31.18000030517578" vwidth="29" vspace="0" hspace="0" border="0" alt="140" orisrc="/local/6/31/D5/3C6B30D6CA99BCD2B376AA31DDE_EFDD529C_140.png" class="img_vsb_content" style="text-align: center;"><span style="font-size: 16px;">下，探测频率</span><img src="../../local/3/54/EE/0B7CA4D7330B024BDAA65034FF7_ADB2686E_15D.png" xmlns:v="urn:schemas-microsoft-com:vml" width="29" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/354EE0B7CA4D7330B024BDAA65034FF7/ADB2686E/15D" vheight="31.18000030517578" vwidth="29" vspace="0" hspace="0" border="0" alt="15D" orisrc="/local/3/54/EE/0B7CA4D7330B024BDAA65034FF7_ADB2686E_15D.png" class="img_vsb_content" style="text-align: center;"><span style="font-size: 16px;">&nbsp;处吸收信号最强的位置。这一位置代表分子在特定激发条件下最强的振动响应，对应于分子的共振频率。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 2.绘制峰位置随泵浦频率的变化：在不同的泵浦频率</span><img src="../../local/6/31/D5/3C6B30D6CA99BCD2B376AA31DDE_EFDD529C_140.png" xmlns:v="urn:schemas-microsoft-com:vml" width="29" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/631D53C6B30D6CA99BCD2B376AA31DDE/EFDD529C/140" vheight="31.18000030517578" vwidth="29" vspace="0" hspace="0" border="0" alt="140" orisrc="/local/6/31/D5/3C6B30D6CA99BCD2B376AA31DDE_EFDD529C_140.png" class="img_vsb_content" style="text-align: center;"><span style="font-size: 16px;">下，将测得的峰位置</span><img src="../../local/3/54/EE/0B7CA4D7330B024BDAA65034FF7_ADB2686E_15D.png" xmlns:v="urn:schemas-microsoft-com:vml" width="29" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/354EE0B7CA4D7330B024BDAA65034FF7/ADB2686E/15D" vheight="31.18000030517578" vwidth="29" vspace="0" hspace="0" border="0" alt="15D" orisrc="/local/3/54/EE/0B7CA4D7330B024BDAA65034FF7_ADB2686E_15D.png" class="img_vsb_content" style="text-align: center;"><span style="font-size: 16px;">&nbsp;绘制在二维图谱上，得到峰中心频率的趋势线。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 3.通过拟合峰中心位置随泵浦频率变化的趋势线，得到一个近似的线性关系曲线：</span></p>
-<p><br></p>
-<p style="text-align: center"><img src="../../local/1/A1/2E/0CF707AB5C3EF0BCD1B6F868415_2EE7C760_588C.jpg" width="250" alt="588C" vsbhref="vurl" vurl="/_vsl/1A12E0CF707AB5C3EF0BCD1B6F868415/2EE7C760/588C" vheight=" 59px" vwidth=" 250px" height="59" border="0" vspace="0" hspace="0" title="588C" orisrc="/local/1/A1/2E/0CF707AB5C3EF0BCD1B6F868415_2EE7C760_588C.jpg" class="img_vsb_content" style="width: 250px; height: 59px;"></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 其中，斜率</span><img src="../../local/9/91/76/1FF1F011A34414857BE253A675B_03A0B973_D3.png" xmlns:v="urn:schemas-microsoft-com:vml" width="9.520000457763672" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/991761FF1F011A34414857BE253A675B/03A0B973/D3" vheight="31.18000030517578" vwidth="9.520000457763672" orisrc="/local/9/91/76/1FF1F011A34414857BE253A675B_03A0B973_D3.png" class="img_vsb_content"><span style="font-size: 16px;">即为中心线斜率 (CLS)。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; CLS直接反映谱峰的展宽程度以及光谱扩散的动态过程，描述了分子如何在不同环境中经历频率波动。在短等待时间</span><img src="../../local/3/52/9A/2B4595E9D1499ED2A670731A0D2_D600323B_108.png" xmlns:v="urn:schemas-microsoft-com:vml" width="13.130000114440918" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/3529A2B4595E9D1499ED2A670731A0D2/D600323B/108" vheight="31.18000030517578" vwidth="13.130000114440918" orisrc="/local/3/52/9A/2B4595E9D1499ED2A670731A0D2_D600323B_108.png" class="img_vsb_content"><span style="font-size: 16px;">时，CLS = 1，谱峰完全受非均匀展宽（Inhomogeneous Broadening）主导，对角线方向明显拉伸。此时分子频率分布广泛，反映了环境的静态异质性。在长等待时间</span><img src="../../local/3/52/9A/2B4595E9D1499ED2A670731A0D2_D600323B_108.png" xmlns:v="urn:schemas-microsoft-com:vml" width="13.130000114440918" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/3529A2B4595E9D1499ED2A670731A0D2/D600323B/108" vheight="31.18000030517578" vwidth="13.130000114440918" orisrc="/local/3/52/9A/2B4595E9D1499ED2A670731A0D2_D600323B_108.png" class="img_vsb_content"><span style="font-size: 16px;">后，谱峰趋于圆形，CLS值逐渐减小，说明峰形完全受均匀展宽（Homogeneous Broadening）主导。此时分子环境波动快速，分子振动频率平均化，失去与初始状态的相关性。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; CLS随</span><img src="../../local/3/52/9A/2B4595E9D1499ED2A670731A0D2_D600323B_108.png" xmlns:v="urn:schemas-microsoft-com:vml" width="13.130000114440918" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/3529A2B4595E9D1499ED2A670731A0D2/D600323B/108" vheight="31.18000030517578" vwidth="13.130000114440918" orisrc="/local/3/52/9A/2B4595E9D1499ED2A670731A0D2_D600323B_108.png" class="img_vsb_content"><span style="font-size: 16px;">的衰减可表示为指数形式：&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
-<p style="text-align: center"><img src="../../local/C/4C/70/DBAB65AD4456FC871A9C4F2E46F_D4F6FE2E_5DAB.jpg" width="200" alt="5DAB" vsbhref="vurl" vurl="/_vsl/C4C70DBAB65AD4456FC871A9C4F2E46F/D4F6FE2E/5DAB" vheight=" 46px" vwidth=" 200px" height="46" border="0" vspace="0" hspace="0" title="5DAB" orisrc="/local/C/4C/70/DBAB65AD4456FC871A9C4F2E46F_D4F6FE2E_5DAB.jpg" class="img_vsb_content" style="width: 200px; height: 46px;"></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp;·其中</span><img src="../../local/2/90/3B/D55E7B3E1D77B1FFA1A447D3B42_0F13E676_11E.png" xmlns:v="urn:schemas-microsoft-com:vml" width="29" height="31.18000030517578" vsbhref="vurl" vurl="/_vsl/2903BD55E7B3E1D77B1FFA1A447D3B42/0F13E676/11E" vheight="31.18000030517578" vwidth="29" vspace="0" hspace="0" border="0" alt="11E" orisrc="/local/2/90/3B/D55E7B3E1D77B1FFA1A447D3B42_0F13E676_11E.png" class="img_vsb_content" style="text-align: center;"><span style="font-size: 16px;">是环境波动的关联时间，表示分子所在微观环境的动态特性。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp;·<strong>快速衰减的CLS：</strong>说明分子环境波动迅速，频率去相干过程较快，常见于动态溶剂化环境或快速氢键交换体系。</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp;·<strong>缓慢衰减的CLS：</strong>表明分子频率随时间保持较强的相关性，环境波动较慢或存在长寿命的静态异质性，常出现在复杂或稳定的分子网络中。</span></p>
-<h1><p><span style="font-size: 16px;"></span></p><p><span style="font-size: 18px;">5.实验细节与光路设计</span></p></h1>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 2DIR实验的核心在于精确控制超快激光脉冲与样品的相互作用，从而获取分子振动的非线性响应信号。常用的实现路径有两种：四波混频（Four-Wave Mixing，FWM）和泵浦-探测（Pump-Probe），它们都基于三阶非线性光学效应，但在光路设计和信号检测方式上有所不同。</span></p>
-<p><span style="font-size: 16px;">四波混频模式使用三束激光脉冲在样品中相互作用，产生一个新的相干信号脉冲。由于该信号的传播方向与入射光不同，可通过空间滤波与背景光分离，噪声极低。但这种方法对光路的空间与时间重叠要求极高，系统调试复杂，因此多用于对信号纯度要求特别高的研究。</span></p>
-<p><span style="font-size: 16px;"><strong>泵浦-探测模式</strong>则采用更简化的设计，也是当前2DIR实验的主流方案。该方法中，两个时间间隔可控的泵浦脉冲先激发样品，随后探测脉冲在不同时间延迟下测量样品的瞬态吸收变化。现代系统通常利用脉冲整形器产生泵浦脉冲对，并精确调节其时间间隔（<em>t<sub>1</sub></em>）和相位，以选择性激发目标振动模式。相比四波混频，泵浦-探测模式信号强度更高、重复性更好，尤其适合研究飞秒至皮秒时间尺度上的快速分子动力学过程，例如氢键的断裂与重组。</span></p>
-<p><br></p>
-<p style="text-align:center"><img src="../../local/C/24/85/ABFBEE526F624B05271262A8F0D_7E8A23B5_555E6.png" xmlns:v="urn:schemas-microsoft-com:vml" width="500" height="235" vsbhref="vurl" vurl="/_vsl/C2485ABFBEE526F624B05271262A8F0D/7E8A23B5/555E6" vheight=" 235px" vwidth=" 500px" border="0" vspace="0" hspace="0" title="" alt="" orisrc="/local/C/24/85/ABFBEE526F624B05271262A8F0D_7E8A23B5_555E6.png" class="img_vsb_content" style="width: 500px; height: 235px;"></p>
-<p><br></p>
-<p style="text-align: center;"><strong><span style="font-size: 14px;">图5-1</span></strong><span style="font-size: 14px;"> 2DIR实验装置与关键组件</span></p>
-<p><span style="font-size: 12px;"><br></span></p>
-<p><span style="font-size: 16px; text-align: justify; text-indent: 32px;">&nbsp; &nbsp; &nbsp; 一套完整的</span><span lang="EN-US" style="font-family: &quot;times new roman&quot;, serif; font-size: 16px; text-align: justify; text-indent: 32px;">2DIR</span><span style="font-size: 16px; text-align: justify; text-indent: 32px;">实验系统通常由光源模块、波长转换模块、脉冲调控模块、样品池与探测模块组成，各部分需满足严格的时序与空间对准要求：</span></p>
-<p style="text-align: justify;text-indent: 0;line-height: 24px;font-size: 16px;font-family: 'times new roman', serif;text-wrap-mode: wrap"><strong><span style="font-family: 宋体">光源模块：</span></strong><span style="font-family: 宋体">超短脉冲激光器是实验的基础，其脉冲宽度与稳定性决定时间分辨率，在超快光源的基本参数中，单脉冲能量主要决定了非线性信号的强度和样品是否会受到损伤，<strong>重复频率</strong>影响信噪比累积速度、样品加热以及探测器匹配，而平均光功率则直接关系到信号强度和样品热负荷。常见的基本参数还包括中心波长、谱带宽、脉冲时长、峰值功率、能量稳定性、时序抖动、光斑质量和偏振状态等。在实验中需通过功率计、能量计、光谱仪和脉冲表征手段（如自动相关、</span><span lang="EN-US">FROG</span><span style="font-family: 宋体">）进行测量与确认，以确保既能获得足够的非线性信号，又避免对样品和光学元件造成损伤。</span></p>
-<p><span style="font-size: 16px;"><strong style="text-wrap-mode: wrap;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;■&nbsp;</span></strong><strong>Yb: KGW激光器（1030 nm, 100 kHz）</strong>：功率稳定，重频高，单脉冲能量较低，适合生物样品体系的长时间动力学实验，本实验室考虑高重复频率、平均功率大，单脉冲能量较低、更安全，运行稳定性好、维护成本低等因素，采用此种光源。</span></p>
-<p><span style="font-size: 16px;"><strong><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;■</span>Ti: Sapphire激光器（800 nm, 1 kHz）</strong>：脉冲更短（&lt;50fs）、单脉冲能量更高，适用于激发弱吸收模式（如C–H伸缩）。</span></p>
-<p><span style="font-size: 16px;"><strong>波长转换模块</strong>：激光输出的近红外光需通过光学参量放大器（OPA）和差频产生（DFG）转化为中红外。</span></p>
-<p><span style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;■</span>OPA利用非线性晶体（如BBO）将800 nm激光扩展至400–2500 nm。</span></p>
-<p><span style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;■</span>DFG在AgGaS<sub>2</sub>等晶体中将两束近红外光混频，得到覆盖2500–12000 nm（4000–830 cm⁻¹）的中红外脉冲，匹配分子振动特征区。</span></p>
-<p><span style="font-size: 16px;"><strong>脉冲调控模块</strong>：包括分束器、脉冲整形器和机械延迟线。</span></p>
-<p><span style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;■</span>分束器将红外光分为泵浦和探测。</span></p>
-<p><span style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;■</span>脉冲整形器生成两束相干泵浦脉冲并调控其间隔<em>t<sub>1</sub></em>。</span></p>
-<p><span style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;■</span>高精度机械延迟线（±0.1 μm）调节探测脉冲延迟<em>t<sub>2</sub></em>，覆盖飞秒至微秒尺度。</span></p>
-<p><span style="font-size: 16px;">●脉冲整形器</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 现代2DIR实验的核心，传统机械延迟线通过移动反射镜调节光程差，但受机械振动限制，时间精度难以突破百飞秒。脉冲整形器采用声光调制器（AOM）或液晶空间光调制器（LC-SLM），直接调控脉冲的频谱成分。AOM可将入射光分割为两个时间间隔精确到±10飞秒的泵浦脉冲对，实现全电调控，避免机械抖动并支持实时序列调整，大幅提高实验稳定性与效率。</span></p>
-<p><span style="font-size: 16px;">●红外检测器</span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 碲镉汞（HgCdTe,MCT）探测器因其在2–20 μm波段的高量子效率（&gt;70%）和超快响应速度（&lt;1 ns）成为2DIR实验的标准配置。</span></p>
-<p><span style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;◆</span>单点MCT需结合单色仪进行频率扫描，适用于高分辨率光谱。</span></p>
-<p><span style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;◆</span>阵列MCT（如64×64或128×128像素）可一次采集全二维光谱，大幅缩短采集时间，尤其适合动力学研究。</span></p>
-<p><span style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-family: vsb_font; font-size: 7.33333px; text-align: justify; text-indent: 32px; text-wrap-mode: wrap;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;◆</span>部分实验采用“上转换技术”，将红外信号混频转换为可见光后用CCD探测，可降低暗电流噪声，但会牺牲部分时间分辨率。</span></p>
-<p><span style="font-size: 16px;"><strong>●样品池与环境控制</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 窗口材料需在中红外透明：常用CaF<sub>2</sub>、KBr、ZnSe。液体样品厚度一般为10–50 μm以避免饱和吸收。环境控制模块可调节温度（±0.1℃）、压力（0–10 MPa）和湿度，用于研究条件变化下的分子相互作用，如蛋白质构象变化。</span></p>
-<p><span style="font-size: 16px;"><strong><span style="font-size: 16px; text-wrap-mode: wrap;">●</span>探测模块</strong></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 由聚焦透镜、滤光片和MCT检测器组成。信号经滤波后送入检测器，再通过锁相放大器和计算机采集，最终得到二维红外光谱。</span></p>
-<p><br></p>
-<p style="text-align: center"><img src="../../local/9/98/EF/3DBA831FD7CD7459B4EE4E1E762_B661EF26_168D54.jpg" width="500" vsbhref="vurl" vurl="/_vsl/998EF3DBA831FD7CD7459B4EE4E1E762/B661EF26/168D54" vheight="" vwidth="500" orisrc="/local/9/98/EF/3DBA831FD7CD7459B4EE4E1E762_B661EF26_168D54.jpg" class="img_vsb_content"></p>
-<p style="text-align: center;"><strong><span style="font-size: 14px;">图5-2 </span></strong><span style="font-size: 14px;">我们实验室中红外光发生器和二维红外仪器的照片实景</span></p>
-<p><span style="font-size: 16px;"><br></span></p>
-<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 尽管二维红外光谱的实验系统更为复杂，需要精密控制激光脉冲的时间、相位和强度，但它在分子结构解析与动力学研究中展现出的独特价值，使其超越了传统方法的局限。无论是探索复杂液体中的分子间相互作用、解析蛋白质的动态折叠路径，还是研究催化反应中的关键中间体，2DIR都已成为不可或缺的重要工具，在化学、生物学、材料科学等领域持续展现出广阔的应用前景与深远的研究价值。</span></p>
-<p><br></p>
-<p style="text-indent: 0;text-align: justify;line-height: 24px;font-family: 'times new roman';font-size: 16px;text-wrap-mode: wrap"><br></p>
-<p style="text-indent: 0;text-align: justify;line-height: 24px;font-family: 'times new roman';font-size: 16px;text-wrap-mode: wrap"><strong><span style="font-family: 宋体;font-size: 19px">参考文献</span></strong></p>
-<p style="text-indent: 0;text-align: justify;line-height: 24px;font-family: 'times new roman';font-size: 16px;text-wrap-mode: wrap"><span style="font-size: 19px">[1]</span> <span style="font-size: 16px">Zheng, J.; Kwak, K.; Fayer, M. D. Acc. of Chem. Res. 2007, 40, 75.</span></p>
-<p style="text-indent: 0;text-align: justify;line-height: 24px;font-family: 'times new roman';font-size: 16px;text-wrap-mode: wrap"><span style="font-size: 19px">[</span><span style="font-size: 19px; font-family: &quot;Times New Roman&quot;;">2</span><span style="font-size: 19px">]</span> <span style="font-size: 16px; font-family: &quot;Times New Roman&quot;;">Zheng, J.; Kwak, K.; Asbury, J. B.; Chen, X.; Piletic, I.; Fayer, M. D. Science 2005, 309, 1338.</span></p>
-<p style="text-indent: 0;text-align: justify;line-height: 24px;font-family: 'times new roman';font-size: 16px;text-wrap-mode: wrap"><span style="font-size: 19px">[</span><span style="font-size: 19px; font-family: &quot;Times New Roman&quot;;">3</span><span style="font-size: 19px">]</span> <span style="font-size: 16px">You, X.*, Shirley, JC., Lee, E., Baiz, CR.“Short- and Long-range Crowding Effects on Water’s Hydrogen Bond Networks”.</span> <span style="font-size: 16px">Cell Rep. Physical Science., 2021, 2(5):100419.</span></p>
-<p style="text-indent: 0;text-align: justify;line-height: 24px;font-family: 'times new roman';font-size: 16px;text-wrap-mode: wrap"><span style="font-size: 19px">[</span><span style="font-size: 19px; font-family: &quot;Times New Roman&quot;;">4</span><span style="font-size: 19px">]</span> <span style="font-size: 16px; font-family: &quot;Times New Roman&quot;;">Hamm P, Zanni M. Concepts and methods of 2D infrared spectroscopy[M]. Cambridge University Press, 2011.</span></p>
-<p><br></p>
+<h4 style="font-style: italic; font-weight: normal; color: #666;">从振动频率到分子动力学：飞秒光谱如何测量分子运动</h4>
+<p>分子从不静止。氢键持续断裂与重组，溶剂分子不断在溶质周围重排，蛋白质在多种构象之间来回涨落。这些运动发生在皮秒尺度——即10⁻¹²秒——却直接决定了分子如何相互识别、蛋白质如何折叠与错折，以及生物组装体如何形成与溶解。</p>
+<p>常规红外光谱测量分子吸收哪些频率，提供的是结构快照。二维红外光谱（2D IR）则更进一步：通过飞秒激光脉冲序列，追踪振动响应如何随时间演化，它直接在运动实际发生的时间尺度上测量分子动力学。频率分辨率与飞秒时间分辨率的结合，使2D IR成为观察复杂体系中分子动态行为的独特工具。</p>
+<h4>从静态结构到分子动力学</h4>
+<h5>为什么分子动力学至关重要</h5>
+<p>要理解2D IR的价值，首先需要认识到：决定分子功能的，往往不是静态结构，而是结构如何随时间涨落。</p>
+<p>以水中的氢键为例。液态水中，每个水分子与邻近水分子形成氢键，但这些键在1至3皮秒内便会断裂重组。这种快速重组是水作为溶剂发挥作用的基础。当蛋白质或其他生物分子存在时，周围水的氢键动力学发生改变，这种改变直接影响分子识别的特异性、蛋白质的稳定性，乃至相分离的发生与否。</p>
+<p>常规红外光谱无法捕捉这些动态信息，因为它将时间上的涨落平均掉了——得到的是所有分子、所有构型的叠加信号，而非特定时刻、特定环境中的瞬态行为。2D IR的设计逻辑正是为了突破这一局限。</p>
+<h4>从一维到二维</h4>
+<h5>2D IR与常规红外光谱的本质区别</h5>
+<p>常规红外光谱回答的问题是：这个分子吸收哪些频率？结果是一维的吸收-频率曲线，可以识别官能团和二级结构，却对动力学保持沉默。</p>
+<p>2D IR提出的是不同的问题：分子在某个频率被激发后，接下来发生了什么？通过将信息展开在激发频率和检测频率两个轴上，并记录光谱如何随等待时间演化，2D IR揭示了一维光谱看不到的两类信息：振动模式之间的耦合，以及分子环境随时间的动态变化。</p>
+<p>2D IR的概念先驱是二维核磁共振（2D NMR）。2D NMR通过揭示核自旋之间的相关性而非孤立共振，彻底改变了结构生物学。将相似思路应用于分子振动的挑战是实验上的：振动运动发生在飞秒尺度（10⁻¹⁵秒），需要相应的超快激光脉冲才能追踪。这一技术在1990年代随着飞秒激光系统的发展而成熟，并于2000年前后实现了第一批真正意义上的2D IR实验。</p>
+<h4>实验原理</h4>
+<h5>2D IR如何工作</h5>
+<p class="concept-callout">2D IR光谱测量分子在被超快红外激光脉冲扰动后，振动激发如何演化和相互作用。</p>
+<p>在典型实验中，一组飞秒红外脉冲以受控方式与样品相互作用。现代2D IR实验中，激发频率轴通过对相干时间 t₁ 进行傅里叶变换来生成，而非直接扫描红外频率。第一对脉冲（泵浦脉冲）激发特定振动模式，在体系内建立振动相干。</p>
+<p>经过可控的等待时间 t₂ 后，第三个脉冲探测分子体系的演化。通过系统改变脉冲间的时间延迟并记录非线性振动响应，研究者重建出二维光谱，揭示振动模式的耦合方式以及分子环境如何随时间演化。</p>
+<p>等待时间 t₂ 是2D IR实验的关键变量。通过测量不同 t₂ 下的二维光谱，我们追踪分子环境的动态演化，从而提取氢键重排速率、溶剂重组时间尺度和构象交换动力学。</p>
+<p class="MsoNormal" style="text-align:center"><img src="../../local/9/0F/73/BAA3148A65629DE8DE62565C76C_DF120BA7_23231.png" class="img_vsb_content" xmlns:v="urn:schemas-microsoft-com:vml" width="601.72998046875" height="196.3300018310547" vsbhref="vurl" vurl="/_vsl/90F73BAA3148A65629DE8DE62565C76C/DF120BA7/23231" vheight="196.3300018310547" vwidth="601.72998046875" orisrc="/local/9/0F/73/BAA3148A65629DE8DE62565C76C_DF120BA7_23231.png"></p>
+<p class="MsoNormal" style="text-align:center"><span style="line-height: 150%; font-weight: bold; font-family: arial, helvetica, sans-serif">图1. 2DIR的基本原理</span></p>
+<h4>读懂2D IR谱图</h4>
+<h5>对角峰、交叉峰与谱线形状</h5>
+<p>2D IR光谱以二维等高线图或伪彩图的形式呈现。横轴是激发（泵浦）频率，纵轴是检测（探测）频率。信号强度由颜色或等高线密度表示，正负峰分别来自基态漂白（ground-state bleach）和激发态吸收（excited-state absorption）。</p>
+<p class="MsoNormal" style="text-align:center; page-break-after:avoid"><img src="../../local/6/B4/69/7AEF58CF4506C475227E9651AB6_C59ECCD0_15A2B.png" class="img_vsb_content" xmlns:v="urn:schemas-microsoft-com:vml" width="226.6699981689453" height="201.3300018310547" vsbhref="vurl" vurl="/_vsl/6B4697AEF58CF4506C475227E9651AB6/C59ECCD0/15A2B" vheight="201.3300018310547" vwidth="226.6699981689453" orisrc="/local/6/B4/69/7AEF58CF4506C475227E9651AB6_C59ECCD0_15A2B.png"></p>
+<p class="MsoNormal" style="text-align:center"><span style="line-height: 150%; font-weight: bold; font-family: arial, helvetica, sans-serif">图2. 二维红外光谱中的交叉峰的示意图：当两个振动模式存在相互作用时，交叉峰会在二维光谱中显现，峰位置和强度可以揭示分子内部不同振动模式之间的耦合程度。</span></p>
+<h5>对角峰</h5>
+<p>对角峰位于激发频率等于检测频率的对角线上，对应常规红外光谱中可见的同一基频振动，反映各振动模式对其局域环境的响应。在较短等待时间下，对角峰沿对角线方向拉伸，这是非均匀展宽的特征：样品中不同分子处于略微不同的局域环境中，因此吸收频率略有差异，叠加后形成沿对角线延伸的峰形。</p>
+<h5>交叉峰</h5>
+<p>当两个振动模式存在耦合时，在非对角线位置出现交叉峰。交叉峰的出现是分子间相互作用的直接证据：共享化学键的两个振动、处于氢键距离内的两个基团，或正在发生能量转移的两个模式，都会产生交叉峰。交叉峰的位置、强度和时间演化，揭示了在一维光谱中隐藏的结构关联和动态信息，在非均质或动态涨落的体系中尤为重要。</p>
+<p class="concept-callout">对角峰揭示孤立振动，交叉峰揭示它们之间的相互作用。这一区别正是2D IR相较于常规红外光谱最核心的信息增量。</p>
+<h4>谱扩散与分子动力学</h4>
+<h5>谱线形状如何编码环境动力学</h5>
+<p>随着等待时间 t₂ 增加，2D IR谱线形状发生演化：初始沿对角线拉伸的对角峰逐渐变为圆形。这一过程称为谱扩散，反映了随着分子环境涨落、初始频率相关性的衰减——振动频率逐渐忘记自己的起始状态。</p>
+<p>谱扩散的速率并非噪声，而是信号：它编码了分子运动的时间尺度。谱扩散慢，意味着环境涨落缓慢；谱扩散快，意味着分子环境快速重组。具体来说，谱扩散速率包含的信息包括：</p>
+<ul class=" list-paddingleft-2">
+ <li><p>氢键断裂与重组的速率</p></li>
+ <li><p>溶剂分子在溶质周围重排的速率</p></li>
+ <li><p>蛋白质在不同构象之间采样的速率</p></li>
+</ul>
+<p style="text-align: center"><img src="../../local/2/5B/23/17644D0592C39B5651491DC4906_EB202CE3_3F339.png" width="500" alt="3F339" vsbhref="vurl" vurl="/_vsl/25B2317644D0592C39B5651491DC4906/EB202CE3/3F339" vheight="" vwidth="500" orisrc="/local/2/5B/23/17644D0592C39B5651491DC4906_EB202CE3_3F339.png" class="img_vsb_content"></p>
+<p class="MsoNormal" style="text-align:center"><span style="line-height: 150%; font-weight: bold; font-family: arial, helvetica, sans-serif">图3. A. 二维红外光谱中的光谱扩散和线型分析示意图，振动探针与溶液环境的能量交换导致泵浦光与探测光频率去相关；B. 中心线斜率随t₂延迟时间呈指数衰减。弛豫时间通常反映振动探针周围局域化学环境的动态变化。</span></p>
+<p>定量上，谱扩散由频率-频率相关函数（FFCF）描述——它度量零时刻的振动频率与稍后时刻同一频率之间的相关性。两个常用的实验可观测量——节线斜率（NLS）和中心线斜率（CLS）——都随着频率相关性的丧失而从1衰减至0。将这一衰减拟合为指数或多指数模型，即可直接给出环境涨落的时间尺度和振幅。</p>
+<p class="concept-callout">谱扩散反映的是振动模式周围分子环境的重组速度。这一可观测量将2D IR与其他光谱技术区别开来：其他方法看到的是结构，2D IR看到的是结构如何随时间涨落。</p>
+<h4>实际应用</h4>
+<h5>2D IR在复杂体系中能揭示什么</h5>
+<p>2D IR的独特价值在于将分子结构与分子动力学直接联系起来。它不仅给出静态振动频率，更揭示分子相互作用如何在超快时间尺度和非均质空间环境中演化。这一能力在局域结构、分子间相互作用和动态涨落紧密耦联的体系中尤为重要。</p>
+<h5>氢键动力学与溶剂化</h5>
+<p>许多分子体系的功能由发生在飞秒至皮秒尺度的氢键重排和溶剂涨落主导。由于振动频率对局域静电环境极为敏感，2D IR可以直接探测液态水、界面和生物体系中氢键网络的重组动力学。</p>
+<p>在水溶液和非均质环境中，谱扩散测量揭示局域分子环境涨落和失忆的速率。界面处的氢键动力学可与体相水显著不同，导致分子柔性、能量弛豫路径和分子间相互作用的改变。这些效应在拥挤生物体系、软材料和受限分子环境中尤为突出。</p>
+<p>在我们实验室的工作中，2D IR测量直接揭示了不同拥挤剂——聚乙二醇、各类糖分子——如何减缓氢键弛豫时间。这些动力学差异不是结构快照所能看到的，但它们对蛋白质稳定性和分子识别有直接后果。<a href="../../Publications.htm">→ 参见我们关于拥挤与界面动力学的研究方向</a></p>
+<h5>蛋白质构象涨落与生物分子组织</h5>
+<p>蛋白质和生物分子组装体是本征动态的体系，而非刚性结构。不同二级结构——α螺旋、β折叠——在2D IR谱中产生各具特征的振动耦合模式，使研究者能够以高结构敏感性探测构象组织。</p>
+<p>除静态结构判断外，2D IR可以直接监测超快构象涨落、瞬态分子间相互作用和动态非均质环境。这些能力对于研究本征无序蛋白、生物分子凝聚体、膜相关组装体和非平衡生物组织越来越重要。</p>
+<p>在我们关于LplA液-液相分离的工作中，2D IR分辨了相变过程中亚皮秒主链涨落和水合重排，直接揭示了构象切换与相边界之间的耦联。→ 参见我们关于相分离与构象动力学的研究</p>
+<h5>分子间耦合与分子识别</h5>
+<p>2D IR谱中的交叉峰提供振动耦合、分子间相互作用和能量转移路径的直接证据，可揭示分子在复杂环境中的相互作用方式——包括配体结合、溶剂介导的相互作用和超分子组装过程。</p>
+<p>在我们关于混合胶束体系的工作中，2D IR结合分子动力学模拟直接测量了胶束-蛋白质界面的氢键谱扩散速率，揭示了界面水合动力学——而非结构或热力学参数——才是决定药物-蛋白质结合亲和力的关键变量。<a href="../../Publications.htm">→ 参见我们关于药物递送与界面动力学的论文</a></p>
+<h5>超快化学交换与能量流</h5>
+<p>由于2D IR直接探测非平衡振动动力学，它对化学交换过程、能量再分配和超快分子间弛豫路径的研究尤为有效。</p>
+<p>氢键切换、溶剂交换、构象互变和振动能量转移，均可通过谱相关性随时间的演化来监测。追踪谱相关性的衰减方式，研究者可以定量获得复杂体系中环境涨落和分子弛豫过程的速率。</p>
+<h4>常见问题</h4>
+<h5>2D IR实际上测量的是什么？</h5>
+<p>2D IR测量振动模式如何在超快时间尺度上相互作用并演化。与主要报告振动频率的常规红外光谱不同，2D IR揭示振动耦合、能量转移、结构涨落和环境动力学——它测量的不是分子是什么样的，而是分子如何随时间运动。</p>
+<h5>为什么2D IR被称为「动态」光谱？</h5>
+<p>因为2D IR追踪振动频率如何在飞秒至皮秒时间尺度上变化，使研究者能够直接观察氢键重排、溶剂化动力学和构象涨落等过程。等待时间 t₂ 是一个真实的时间变量，而非拟合参数——光谱如何随 t₂ 演化，直接编码了分子运动的速率和幅度。</p>
+<h5>2D IR谱中的交叉峰意味着什么？</h5>
+<p>交叉峰在两个振动模式发生相互作用或能量交换时出现。它们提供振动耦合、分子邻近性或体系内结构相关性的直接证据。交叉峰的出现、位置和时间演化，通常揭示在一维光谱中完全隐藏的信息——尤其在非均质或动态涨落的环境中。</p>
+<h5>什么是谱扩散？</h5>
+<p>谱扩散描述的是分子的振动频率如何因局域环境的涨落而随时间变化。它反映了周围分子的动力学——溶剂重排、氢键涨落、构象变化。谱扩散慢，意味着分子环境缓慢改变；谱扩散快，意味着分子环境迅速重组。</p>
+<h5>为什么2D IR特别适合研究生物体系？</h5>
+<p>许多生物过程由超快时间尺度上的瞬态相互作用和结构涨落主导。2D IR在这些时间尺度上原生操作，且振动频率对局域静电环境高度敏感，使其能够分辨蛋白质、膜、凝聚体和水合网络中的异质动力学——而这些是系综平均测量无法触及的信息。</p>
+<h5>2D IR与分子动力学模拟如何结合使用？</h5>
+<p>在我们实验室，2D IR与MD模拟的结合是标准工作流程。MD模拟提供原子轨迹，从中计算出频率-频率相关函数（FFCF）；实验测量的FFCF与之直接比较，互相验证，共同给出分子动力学的原子级解释。这种结合克服了单纯光谱测量缺乏空间分辨率、单纯模拟缺乏实验约束的局限。</p>
+<h4>在我们实验室</h4>
+<h5>2D IR如何支撑我们的研究</h5>
+<p>在尤晓实验室，2D IR是测量分子动力学的核心工具——但不是唯一工具。我们将其与近场纳米成像和多尺度分子模拟相结合，在时间和空间两个维度上同时分辨生物体系中的分子涨落。</p>
+<p>具体而言，2D IR在我们的工作中承担三个角色：</p>
+<ul class=" list-paddingleft-2">
+ <li><p>直接测量氢键弛豫时间尺度：在拥挤环境、脂质界面、药物-胶束-蛋白质界面中，量化氢键动力学如何偏离体相水行为</p></li>
+ <li><p>分辨凝聚体内的主链和水合动力学：在液-液相分离的液态和固态之间追踪动力学变化，识别病理性聚集的分子前兆</p></li>
+ <li><p>验证分子动力学模拟：将实验FFCF与计算FFCF直接比较，为光谱特征提供原子级机制解释</p></li>
+</ul>
+<p>我们持续的目标是：让分子动力学不仅仅是可测量的，而是可预测的、可设计的。有关当前研究方向和具体成果，请见我们的研究页面和论文列表，或直接与我们联系。</p>
+<p style="font-style: italic; color: #666;  padding-top: 20px;">尤晓实验室 · 时空分辨光谱成像实验室 · 西湖大学工学院 · youxiao@westlake.edu.cn · 更新于 2026年5月</p>
 </div></p>
            
 
