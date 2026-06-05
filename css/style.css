@@ -357,17 +357,24 @@ footer {
 .collaboration {
   position: relative;
   min-height: 120px;
-  padding-right: 170px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px;
+  column-gap: 36px;
+  align-items: start;
 }
 
 .collaboration::after {
   content: "";
-  position: absolute;
-  top: 0;
-  right: 137px;
+  grid-column: 2;
+  grid-row: 1 / span 4;
   width: 140px;
   height: 140px;
   background: url("../img/nsfc.png") center / contain no-repeat;
+}
+
+.collaboration h3,
+.collaboration p {
+  grid-column: 1;
 }
 
 .collaboration a {
