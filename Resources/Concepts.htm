@@ -134,10 +134,32 @@ document.body.className = isZh ? "zhBody" : "enBody";
             <ul class="teaching_list"><script>var typeList = [],type;</script>
 
    <script>
+       type = 'Scientific Writing & Communication';
+       typeList.push(type);
+    </script>
+    <li id="section_u3_0" class="Scientific Writing Scientific Writing Communication" data-type="Scientific Writing &amp; Communication" data-subtype="Scientific Writing">
+                <a href="../info/1118/1160.htm" title="Checklist to Use Before Submitting a Paper to a Journal">
+                    <h6>Checklist to Use Before Submitting a Paper to a Journal</h6>
+                   <!-- <p>Scientific Writing</p> -->
+                    <div>2026-06-10 13:18:23</div>
+                </a>
+            </li>
+   <script>
+       type = 'Scientific Writing & Communication';
+       typeList.push(type);
+    </script>
+    <li id="section_u3_1" class="Scientific Writing Scientific Writing Communication" data-type="Scientific Writing &amp; Communication" data-subtype="Scientific Writing">
+                <a href="../info/1118/1157.htm" title="A Guide to Standardized Scientific Figure Preparation">
+                    <h6>A Guide to Standardized Scientific Figure Preparation</h6>
+                   <!-- <p>Scientific Writing</p> -->
+                    <div>2026-06-10 13:06:14</div>
+                </a>
+            </li>
+   <script>
        type = 'Methods';
        typeList.push(type);
     </script>
-    <li id="section_u3_0" class="2DIR Methods">
+    <li id="section_u3_2" class="2DIR Methods" data-type="Methods" data-subtype="2DIR">
                 <a href="../info/1118/1101.htm" title=" Two-Dimensional Infrared Spectroscopy (2D IR)">
                     <h6> Two-Dimensional Infrared Spectroscopy (2D IR)</h6>
                    <!-- <p>2DIR</p> -->
@@ -148,7 +170,7 @@ document.body.className = isZh ? "zhBody" : "enBody";
        type = 'Methods';
        typeList.push(type);
     </script>
-    <li id="section_u3_1" class="Raman Snectroscopy Methods">
+    <li id="section_u3_3" class="Raman Snectroscopy Methods" data-type="Methods" data-subtype="Raman Snectroscopy">
                 <a href="../info/1118/1037.htm" title="Raman Spectroscopy: Fundamentals, Challenges, and Emerging Frontiers">
                     <h6>Raman Spectroscopy: Fundamentals, Challenges, and Emerging Frontiers</h6>
                    <!-- <p>Raman Snectroscopy</p> -->
@@ -158,32 +180,21 @@ document.body.className = isZh ? "zhBody" : "enBody";
  <script>
        var dlElement = document. getElementsByTagName('dl')[0];
        var dtElement = document. getElementsByTagName('dt')[0];
-       var item = {type:'',subtypeList:[]},elementList = [];
-           Array.from(new Set(typeList)).forEach(e => {
-              if('Methods' == e){
-                if(item.type != e){
-                   item = {type:'',subtypeList:[]};
-                   item.type = e;
-                   item.subtypeList.push('2DIR');
-               } else {
-                   item.subtypeList.push('2DIR');
-               }
-              }
-               elementList.push(item); 
-           }) 
-           Array.from(new Set(typeList)).forEach(e => {
-              if('Methods' == e){
-                if(item.type != e){
-                   item = {type:'',subtypeList:[]};
-                   item.type = e;
-                   item.subtypeList.push('Raman Snectroscopy');
-               } else {
-                   item.subtypeList.push('Raman Snectroscopy');
-               }
-              }
-               elementList.push(item); 
-           }) 
-       Array.from(new Set(elementList)).forEach(item => {
+       var liElements = document. querySelectorAll('li[id]');
+       var elementList = [];
+       liElements.forEach(liElement => {
+            var typeName = liElement.dataset.type || '';
+            var subtypeName = liElement.dataset.subtype || '';
+            var item = elementList.find(el => el.type == typeName);
+            if(!item){
+                 item = {type:typeName,subtypeList:[]};
+                 elementList.push(item);
+            }
+            if(subtypeName && !item.subtypeList.includes(subtypeName)){
+                 item.subtypeList.push(subtypeName);
+            }
+       })
+       elementList.forEach(item => {
             var ddElement = document.createElement('dd');
             ddElement.innerHTML += '<a>' + item.type + '</a>';
             Array.from(new Set(item.subtypeList)).forEach(el => {
@@ -193,22 +204,18 @@ document.body.className = isZh ? "zhBody" : "enBody";
        })
                
          var aElements = document.getElementsByTagName('a');
-         var pElements = document.getElementsByTagName('p');
-         var liElements = document. querySelectorAll('li[id]');
+         var pElements = document.querySelectorAll('nav dd p');
          var clickSubType = '',clickType= '';
          // 定义点击事件处理程序
          function PClick(e) {
                 clickType = e.target.parentNode.childNodes[0].innerText;
                 clickSubType = e.target.innerText;
-                console.log(clickType,clickSubType,liElement)
                 for (let i = 0; i < liElements.length; i++) {
                      var liElement = liElements[i];
                      liElement.style.display = "none";
-                     clickSubType.split(' ').forEach(className => {
-                         if(liElement.classList.contains(clickType) && liElement.classList.contains(className)) {
+                         if(liElement.dataset.type == clickType && liElement.dataset.subtype == clickSubType) {
                              liElement.style.display = "block";
                          }
-                     })
                 }    
          }
          // 定义点击事件处理程序
@@ -217,7 +224,7 @@ document.body.className = isZh ? "zhBody" : "enBody";
                 for (let i = 0; i < liElements.length; i++) {
                      var liElement = liElements[i];
                      liElement.style.display = "none";
-                     if(liElement.classList.contains(clickType)) {
+                     if(liElement.dataset.type == clickType) {
                          liElement.style.display = "block";
                      }
                 }  
@@ -238,7 +245,9 @@ document.body.className = isZh ? "zhBody" : "enBody";
         for (let i = 0; i < aElements.length; i++) {
             var aElement = aElements[i]; 
             // 将点击事件处理程序与 <a> 元素关联起来
-           // aElement.addEventListener("click",AClick);
+            if(aElement.parentNode.tagName == 'DD'){
+                aElement.addEventListener("click",AClick);
+            }
         }
     </script>
 </ul>
