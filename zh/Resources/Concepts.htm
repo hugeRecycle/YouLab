@@ -180,7 +180,7 @@ document.body.className = isZh ? "zhBody" : "enBody";
  <script>
        var dlElement = document. getElementsByTagName('dl')[0];
        var dtElement = document. getElementsByTagName('dt')[0];
-       var liElements = document. querySelectorAll('li[id]');
+       var liElements = document.querySelectorAll('.teaching_list > li[id]');
        var elementList = [];
        liElements.forEach(liElement => {
             var typeName = liElement.dataset.type || '';
@@ -194,61 +194,45 @@ document.body.className = isZh ? "zhBody" : "enBody";
                  item.subtypeList.push(subtypeName);
             }
        })
+       function showAll() {
+            for (let i = 0; i < liElements.length; i++) {
+                 liElements[i].style.display = "block";
+            }
+       }
+       function filterByType(typeName) {
+            for (let i = 0; i < liElements.length; i++) {
+                 var liElement = liElements[i];
+                 liElement.style.display = liElement.dataset.type == typeName ? "block" : "none";
+            }
+       }
+       function filterBySubtype(typeName, subtypeName) {
+            for (let i = 0; i < liElements.length; i++) {
+                 var liElement = liElements[i];
+                 liElement.style.display = liElement.dataset.type == typeName && liElement.dataset.subtype == subtypeName ? "block" : "none";
+            }
+       }
        elementList.forEach(item => {
             var ddElement = document.createElement('dd');
-            ddElement.innerHTML += '<a>' + item.type + '</a>';
+            var typeElement = document.createElement('a');
+            typeElement.href = 'javascript:;';
+            typeElement.innerText = item.type;
+            typeElement.addEventListener("click", function(e) {
+                e.preventDefault();
+                filterByType(item.type);
+            });
+            ddElement.appendChild(typeElement);
             Array.from(new Set(item.subtypeList)).forEach(el => {
-                 ddElement.innerHTML += '<p>' + el + '</p>'
+                 var subtypeElement = document.createElement('p');
+                 subtypeElement.innerText = el;
+                 subtypeElement.addEventListener("click", function() {
+                     filterBySubtype(item.type, el);
+                 });
+                 ddElement.appendChild(subtypeElement);
             })
             dlElement.appendChild(ddElement);
        })
-               
-         var aElements = document.getElementsByTagName('a');
-         var pElements = document.querySelectorAll('nav dd p');
-         var clickSubType = '',clickType= '';
-         // 定义点击事件处理程序
-         function PClick(e) {
-                clickType = e.target.parentNode.childNodes[0].innerText;
-                clickSubType = e.target.innerText;
-                for (let i = 0; i < liElements.length; i++) {
-                     var liElement = liElements[i];
-                     liElement.style.display = "none";
-                         if(liElement.dataset.type == clickType && liElement.dataset.subtype == clickSubType) {
-                             liElement.style.display = "block";
-                         }
-                }    
-         }
-         // 定义点击事件处理程序
-         function AClick(e) {
-                clickType = e.target.innerText;
-                for (let i = 0; i < liElements.length; i++) {
-                     var liElement = liElements[i];
-                     liElement.style.display = "none";
-                     if(liElement.dataset.type == clickType) {
-                         liElement.style.display = "block";
-                     }
-                }  
-         }
-         function dtClick(e) {
-                for (let i = 0; i < liElements.length; i++) {
-                     var liElement = liElements[i];
-                     liElement.style.display = "block";
-                }  
-         }
           // 将点击事件处理程序与 <dt> 元素关联起来
-         dtElement.addEventListener("click",dtClick);
-         for (let i = 0; i < pElements.length; i++) {
-            var pElement = pElements[i]; 
-            // 将点击事件处理程序与 <p> 元素关联起来
-            pElement.addEventListener("click",PClick);
-        }
-        for (let i = 0; i < aElements.length; i++) {
-            var aElement = aElements[i]; 
-            // 将点击事件处理程序与 <a> 元素关联起来
-            if(aElement.parentNode.tagName == 'DD'){
-                aElement.addEventListener("click",AClick);
-            }
-        }
+         dtElement.addEventListener("click",showAll);
     </script>
 </ul>
         </div>
