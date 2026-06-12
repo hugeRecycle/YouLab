@@ -128,16 +128,30 @@ document.body.className = isZh ? "zhBody" : "enBody";
         <div class="wrap_box pd90 clearfix">
             <nav>
                 <dl>
-                    <dt>All</dt>
+                    <dt>
+                        All
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">研究体系</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">分析方法</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">科研写作与表达</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">导师信札与课题组文化</a>
+                    </dd>
                 </dl>
             </nav>
             <ul class="teaching_list"><script>var typeList = [],type;</script>
 
    <script>
-       type = '科学写作与交流';
+       type = '科研写作与表达';
        typeList.push(type);
     </script>
-    <li id="section_u3_0" class="科学写作 科学写作与交流" data-type="科学写作与交流" data-subtype="科学写作">
+    <li id="section_u3_0" class="科学写作 科研写作与表达" data-type="科研写作与表达" data-subtype="科学写作">
                 <a href="../../info/1139/1159.htm" title="期刊论文投稿前自查清单">
                     <h6>期刊论文投稿前自查清单</h6>
                    <!-- <p>科学写作</p> -->
@@ -145,10 +159,10 @@ document.body.className = isZh ? "zhBody" : "enBody";
                 </a>
             </li>
    <script>
-       type = '科学写作与交流';
+       type = '科研写作与表达';
        typeList.push(type);
     </script>
-    <li id="section_u3_1" class="科学写作 科学写作与交流" data-type="科学写作与交流" data-subtype="科学写作">
+    <li id="section_u3_1" class="科学写作 科研写作与表达" data-type="科研写作与表达" data-subtype="科学写作">
                 <a href="../../info/1139/1158.htm" title="科研图表规范化制图指南">
                     <h6>科研图表规范化制图指南</h6>
                    <!-- <p>科学写作</p> -->
@@ -156,10 +170,10 @@ document.body.className = isZh ? "zhBody" : "enBody";
                 </a>
             </li>
    <script>
-       type = 'Systems';
+       type = '研究体系';
        typeList.push(type);
     </script>
-    <li id="section_u3_2" class="Zwitterionic Systems" data-type="Systems" data-subtype="Zwitterionic">
+    <li id="section_u3_2" class="Zwitterionic 研究体系" data-type="研究体系" data-subtype="Zwitterionic">
                 <a href="../../info/1139/1141.htm" title="二维红外光谱">
                     <h6>二维红外光谱</h6>
                    <!-- <p>Zwitterionic</p> -->
@@ -167,10 +181,10 @@ document.body.className = isZh ? "zhBody" : "enBody";
                 </a>
             </li>
    <script>
-       type = 'Methods';
+       type = '分析方法';
        typeList.push(type);
     </script>
-    <li id="section_u3_3" class="Raman Snectroscopy Methods" data-type="Methods" data-subtype="Raman Snectroscopy">
+    <li id="section_u3_3" class="Raman Snectroscopy 分析方法" data-type="分析方法" data-subtype="Raman Snectroscopy">
                 <a href="../../info/1139/1099.htm" title="拉曼光谱：基础、挑战与前沿研究">
                     <h6>拉曼光谱：基础、挑战与前沿研究</h6>
                    <!-- <p>Raman Snectroscopy</p> -->
@@ -181,19 +195,6 @@ document.body.className = isZh ? "zhBody" : "enBody";
        var dlElement = document. getElementsByTagName('dl')[0];
        var dtElement = document. getElementsByTagName('dt')[0];
        var liElements = document.querySelectorAll('.teaching_list > li[id]');
-       var elementList = [];
-       liElements.forEach(liElement => {
-            var typeName = liElement.dataset.type || '';
-            var subtypeName = liElement.dataset.subtype || '';
-            var item = elementList.find(el => el.type == typeName);
-            if(!item){
-                 item = {type:typeName,subtypeList:[]};
-                 elementList.push(item);
-            }
-            if(subtypeName && !item.subtypeList.includes(subtypeName)){
-                 item.subtypeList.push(subtypeName);
-            }
-       })
        function showAll() {
             for (let i = 0; i < liElements.length; i++) {
                  liElements[i].style.display = "block";
@@ -205,32 +206,12 @@ document.body.className = isZh ? "zhBody" : "enBody";
                  liElement.style.display = liElement.dataset.type == typeName ? "block" : "none";
             }
        }
-       function filterBySubtype(typeName, subtypeName) {
-            for (let i = 0; i < liElements.length; i++) {
-                 var liElement = liElements[i];
-                 liElement.style.display = liElement.dataset.type == typeName && liElement.dataset.subtype == subtypeName ? "block" : "none";
-            }
-       }
-       elementList.forEach(item => {
-            var ddElement = document.createElement('dd');
-            var typeElement = document.createElement('a');
-            typeElement.href = 'javascript:;';
-            typeElement.innerText = item.type;
+       dlElement.querySelectorAll('dd a').forEach(typeElement => {
             typeElement.addEventListener("click", function(e) {
                 e.preventDefault();
-                filterByType(item.type);
+                filterByType(typeElement.innerText);
             });
-            ddElement.appendChild(typeElement);
-            Array.from(new Set(item.subtypeList)).forEach(el => {
-                 var subtypeElement = document.createElement('p');
-                 subtypeElement.innerText = el;
-                 subtypeElement.addEventListener("click", function() {
-                     filterBySubtype(item.type, el);
-                 });
-                 ddElement.appendChild(subtypeElement);
-            })
-            dlElement.appendChild(ddElement);
-       })
+       });
           // 将点击事件处理程序与 <dt> 元素关联起来
          dtElement.addEventListener("click",showAll);
     </script>

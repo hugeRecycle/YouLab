@@ -128,7 +128,21 @@ document.body.className = isZh ? "zhBody" : "enBody";
         <div class="wrap_box pd90 clearfix">
             <nav>
                 <dl>
-                    <dt>All</dt>
+                    <dt>
+                        All
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">System</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">Methods</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">Scientific Writing &amp; Communication</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">Mentorship &amp; Lab Culture</a>
+                    </dd>
                 </dl>
             </nav>
             <ul class="teaching_list"><script>var typeList = [],type;</script>
@@ -181,15 +195,6 @@ document.body.className = isZh ? "zhBody" : "enBody";
        var dlElement = document. getElementsByTagName('dl')[0];
        var dtElement = document. getElementsByTagName('dt')[0];
        var liElements = document.querySelectorAll('.teaching_list > li[id]');
-       var elementList = [];
-       liElements.forEach(liElement => {
-            var typeName = liElement.dataset.type || '';
-            var item = elementList.find(el => el.type == typeName);
-            if(!item){
-                 item = {type:typeName};
-                 elementList.push(item);
-            }
-       })
        function showAll() {
             for (let i = 0; i < liElements.length; i++) {
                  liElements[i].style.display = "block";
@@ -201,18 +206,12 @@ document.body.className = isZh ? "zhBody" : "enBody";
                  liElement.style.display = liElement.dataset.type == typeName ? "block" : "none";
             }
        }
-       elementList.forEach(item => {
-            var ddElement = document.createElement('dd');
-            var typeElement = document.createElement('a');
-            typeElement.href = 'javascript:;';
-            typeElement.innerText = item.type;
+       dlElement.querySelectorAll('dd a').forEach(typeElement => {
             typeElement.addEventListener("click", function(e) {
                 e.preventDefault();
-                filterByType(item.type);
+                filterByType(typeElement.innerText);
             });
-            ddElement.appendChild(typeElement);
-            dlElement.appendChild(ddElement);
-       })
+       });
           // 将点击事件处理程序与 <dt> 元素关联起来
          dtElement.addEventListener("click",showAll);
     </script>
