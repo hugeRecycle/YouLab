@@ -1373,41 +1373,46 @@ menu > ul {
 
 /* publications */
 .publications .wrap_box {
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-left: 1px solid rgba(0, 73, 143, 0.16);
 }
 
 .publications_nav {
-  margin-left: 5px;
+  margin-left: 0;
   float: left;
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
   top: 100px;
-  width: 100px;
+  width: 128px;
+  padding: 10px 0 10px 12px;
+  background: rgba(246, 248, 250, 0.78);
+  border: 1px solid rgba(0, 73, 143, 0.12);
+  border-left: 0;
+  border-radius: 0 8px 8px 0;
 }
 
 .publications_nav li {
-  padding: 5px;
-  padding-left: 20px;
-  border-left: 2px solid transparent;
+  padding: 4px 10px;
+  border-left: 3px solid transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .publications_nav li:hover {
-  border-left: 2px solid #00498f;
+  border-left-color: #00498f;
+  background-color: rgba(0, 73, 143, 0.08);
 }
 
 .publications_nav li:hover a {
   color: #00498f;
-  font-size: 22px;
-  line-height: 30px;
   font-weight: bold;
 }
 
 .publications_nav a {
-  font-family: PingFang SC;
-  font-size: 16px;
+  font-family: Georgia, "Times New Roman", PingFang SC, serif;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
   text-decoration: none;
@@ -1415,16 +1420,17 @@ menu > ul {
 }
 
 .publications .content_list {
-  width: 79%;
+  width: calc(100% - 190px);
   float: right;
 }
 
 .content_list a:hover {
   color: #00498F;
+  text-decoration-color: rgba(0, 73, 143, 0.55);
 }
 
 .publications dl {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .publications dl:first-child {
@@ -1432,51 +1438,71 @@ menu > ul {
 }
 
 .publications dt {
-  background: #f6f8fa;
-  width: 200px;
-  height: 55px;
-  border-radius: 5px;
-  color: #5b5657;
-  line-height: 55px;
+  display: inline-block;
+  min-width: 150px;
+  padding: 0 30px;
+  height: 58px;
+  background: linear-gradient(135deg, #00498f 0%, #0a6d8d 100%);
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(0, 73, 143, 0.18);
+  color: #ffffff;
+  line-height: 58px;
   text-align: center;
-  font-size: 24px;
+  font-family: Georgia, "Times New Roman", PingFang SC, serif;
+  font-size: 28px;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
 .publications dd {
   position: relative;
-  margin-left: 10px;
-  font-family: PingFang SC;
-  font-size: 16px;
+  margin: 18px 0 0 10px;
+  font-family: "Helvetica Neue", Helvetica, PingFang SC, sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.75;
   letter-spacing: 0em;
   text-align: justify;
-  padding: 10px;
-  color: #5b5657;
+  padding: 18px 24px 18px 34px;
+  color: #3f4448;
+  background: #ffffff;
+  border: 1px solid rgba(0, 73, 143, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(16, 43, 68, 0.08);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.publications dd:hover {
+  border-color: rgba(0, 73, 143, 0.24);
+  box-shadow: 0 18px 38px rgba(16, 43, 68, 0.12);
+  transform: translateY(-2px);
 }
 
 .publications dd::before {
   position: absolute;
-  top: 20px;
-  left: -5px;
+  top: 30px;
+  left: 18px;
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
   border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: #f18b1c;
+  box-shadow: 0 0 0 5px rgba(241, 139, 28, 0.16);
 }
 
 .publications dd a {
-  font-family: PingFang SC;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: Georgia, "Times New Roman", PingFang SC, serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.62;
   letter-spacing: 0em;
   text-align: left;
-  padding: 10px;
-  color: #5b5657;
+  padding: 0 3px;
+  color: #00498f;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(0, 73, 143, 0.28);
 }
 
 /* researchList */
