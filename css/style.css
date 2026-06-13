@@ -509,6 +509,10 @@ menu > ul {
   width: 100%;
 }
 
+.menu .list .active {
+  color: #fff;
+}
+
 .menu .list a:hover {
   font-size: 17px;
   font-weight: 600;
@@ -2099,15 +2103,23 @@ menu > ul {
 
 .teaching nav dt {
   font-family: PingFang SC;
-  font-size: 19px;
+  display: block;
+  margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-radius: 0 8px 8px 0;
+  font-size: 17px;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 21px;
   color: rgba(0, 0, 0, 0.85);
-  padding: 5px 0 5px 20px;
+  padding: 8px 14px 8px 18px;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .teaching nav {
-  margin-left: 5px;
+  box-sizing: border-box;
+  width: 260px;
+  margin-left: 0;
+  padding-right: 18px;
   float: left;
   position: -webkit-sticky;
   /* Safari */
@@ -2116,18 +2128,26 @@ menu > ul {
 }
 
 .teaching dd {
-  padding-left: 30px;
+  margin: 3px 0;
+  padding-left: 12px;
 }
 
 .teaching dd a {
   font-family: PingFang SC;
-  font-size: 16px;
+  display: block;
+  border-left: 3px solid transparent;
+  border-radius: 0 8px 8px 0;
+  padding: 7px 14px 7px 18px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.55);
+  white-space: normal;
+  overflow-wrap: break-word;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .teaching dd p {
@@ -2162,6 +2182,15 @@ menu > ul {
   cursor: pointer;
 }
 
+.teaching nav dt:hover,
+.teaching dd a:hover,
+.teaching nav dt.active,
+.teaching dd a.active {
+  border-left-color: #00498f;
+  background-color: rgba(0, 73, 143, 0.06);
+  color: #00498f;
+}
+
 .teaching dd p:hover::before {
   background-color: #00498f;
 }
@@ -2169,7 +2198,7 @@ menu > ul {
 .teaching .teaching_list {
   font-family: PingFang SC;
   letter-spacing: 0em;
-  width: 74%;
+  width: calc(100% - 300px);
   text-align: left;
   float: right;
 }
