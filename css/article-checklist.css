@@ -4,7 +4,6 @@
 
 .research_detail .v_news_content {
   position: relative;
-  max-width: 1000px;
   margin: 30px auto 0;
   padding: 8px 0 0;
   color: #26313b;
@@ -55,6 +54,10 @@
   margin-top: 42px;
   background: #0a6d8d;
   font-size: 23px;
+}
+
+.research_detail .v_news_content h4.section-alt {
+  background: #0a6d8d;
 }
 
 .research_detail .v_news_content h4::before,
