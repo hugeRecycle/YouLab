@@ -3484,7 +3484,8 @@ footer {
     z-index: 100;
   }
 
-  menu.menu-open > ul.menu {
+  .enBody menu.menu-open > ul.menu.enCont,
+  .zhBody menu.menu-open > ul.menu.zhCont {
     display: flex !important;
   }
 
