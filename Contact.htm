@@ -19,7 +19,7 @@
 <script type="text/javascript">_jsq_(1113,'/Contact.jsp',-1,1961424880)</script>
 </head>
 <body>
-<script>var isZh = location.href.includes("zh") </script>
+<script>var isZh = /(^|\/)zh(\/|$)/.test(location.pathname);</script>
    <header>
         <div class="wrap_box">
           <script language="javascript" src="system/resource/js/news/mp4video.js"></script>
@@ -43,8 +43,12 @@
 </div>
 <script>
 var langBtn = document.getElementById("langBtn");langBtn.onclick = function(){
-    var path = location.pathname.split("zh").pop();
-    location.href = isZh ? path : "/zh"+path;
+    var path = location.pathname;
+    var pairedLink = document.querySelector(isZh ? ".langCont.zhCont" : ".langCont.enCont");
+    if (pairedLink) { location.href = pairedLink.href; return; }
+    var targetPath = isZh ? path.replace(/\/zh(?=\/|$)/, "") : path.replace(/\/((?:News|Resources|info)\/|(?:index|Research|People|Publications|News|Resources|Contact)\.htm$)/, "/zh/$1");
+    if (!isZh && targetPath === path) { targetPath = path.replace(/\/?$/, "/zh/"); }
+    location.href = targetPath + location.search + location.hash;
 }
 document.body.className = isZh ? "zhBody" : "enBody";
 </script>
